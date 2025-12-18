@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Tien | Aspiring Google Student Ambassador</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3, h4, .google-font {
+            font-family: 'Google Sans', sans-serif;
+        }
+        .google-blue { color: #4285F4; }
+        .google-red { color: #EA4335; }
+        .google-yellow { color: #FBBC05; }
+        .google-green { color: #34A853; }
+        .bg-google-blue { background-color: #4285F4; }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .skill-tag {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            margin-right: 0.25rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="font-bold text-xl google-font text-gray-700">
+                <span class="google-blue">G</span><span class="google-red">o</span><span class="google-yellow">o</span><span class="google-blue">g</span><span class="google-green">l</span><span class="google-red">e</span> Student Ambassador Candidate
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-blue-600 font-medium">Giới thiệu</a>
+                <a href="#media" class="hover:text-blue-600 font-medium">Báo chí</a>
+                <a href="#impact" class="hover:text-blue-600 font-medium">Cộng đồng</a>
+                <a href="#achievements" class="hover:text-blue-600 font-medium">Thành tích</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="about" class="bg-white">
+        <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 flex flex-col-reverse md:flex-row items-center">
+            <div class="md:w-1/2 mt-8 md:mt-0">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 text-xs font-semibold tracking-wider text-blue-600 uppercase bg-blue-50 rounded-full border border-blue-100">
+                        Tech Community Leader
+                    </span>
+                    <span class="px-3 py-1 text-xs font-semibold tracking-wider text-red-600 uppercase bg-red-50 rounded-full border border-red-100">
+                        National ICPC Award
+                    </span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 text-gray-900 leading-tight">
+                    Xin chào, tôi là <br><span class="text-blue-600">Nguyễn Tiến</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+                    Sinh viên CNTT ĐH Bách Khoa Đà Nẵng.
+                    <br>
+                    <span class="font-medium text-gray-800"><i class="fas fa-code text-blue-500 mr-1"></i> Codeforces Expert</span> 
+                    | 
+                    <span class="font-medium text-gray-800"><i class="fas fa-award text-yellow-500 mr-1"></i> National ICPC</span>
+                    <br>
+                    <strong>Thành viên Đội tuyển trường:</strong> Olympic Tin học, AI & ICPC.
+                    <br>
+                    Admin cộng đồng <strong>400.000+ thành viên</strong>.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#media" class="bg-google-blue text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:bg-blue-700 transition flex items-center gap-2">
+                        <i class="fas fa-newspaper"></i> Xem Bài Viết Báo Chí
+                    </a>
+                    <a href="https://github.com/Tienes2810" target="_blank" class="bg-gray-100 text-gray-800 px-8 py-3 rounded-lg font-medium hover:bg-gray-200 transition flex items-center gap-2">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+                
+                <div class="mt-8 flex gap-6 text-gray-500">
+                    <a href="https://linkedin.com/in/tienes2810/" class="hover:text-blue-600 text-2xl"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:nguyentien281006@gmail.com" class="hover:text-red-500 text-2xl"><i class="fas fa-envelope"></i></a>
+                    <a href="https://codeforces.com/profile/bkdn25.Tienes" class="hover:text-yellow-600 text-2xl font-bold text-sm flex items-center">Codeforces</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end">
+                <!-- Avatar -->
+                <div class="relative w-64 h-64 md:w-80 md:h-80 bg-gradient-to-tr from-blue-100 to-green-100 rounded-full flex items-center justify-center overflow-hidden border-4 border-white shadow-xl">
+                    <img src="images/avt.JPG" alt="Nguyen Tien Avatar" class="w-full h-full object-cover" onerror="this.src='https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=b6e3f4'">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MEDIA SECTION -->
+    <section id="media" class="py-16 bg-blue-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-2 text-center google-font">Dấu Ấn Báo Chí & Truyền Thông</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Câu chuyện về nỗ lực vượt khó và đam mê khoa học của tôi đã được lan tỏa trên các phương tiện truyền thông uy tín.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <a href="https://tuoitre.vn/kho-chong-chat-khong-danh-guc-duoc-chang-trai-sang-tao-van-trung-tuyen-3-truong-top-dau-20240828224431315.htm" target="_blank" class="block bg-white rounded-xl overflow-hidden shadow-md card-hover group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="https://vcdn1-tuoitre.vnecdn.net/2024/08/28/nguyen-tien-1-17248596859871465620958.jpg" onerror="this.src='https://placehold.co/600x400/e2e8f0/475569?text=Bao+Tuoi+Tre'" alt="Báo Tuổi Trẻ" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">Báo Tuổi Trẻ</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2 group-hover:text-blue-600 transition">"Khó khăn chồng chất không đánh gục được chàng trai sáng tạo"</h3>
+                        <p class="text-sm text-gray-500 mb-4">Bài viết vinh danh nghị lực vượt khó và thành tích đỗ 3 trường đại học hàng đầu.</p>
+                        <span class="text-blue-600 text-sm font-medium flex items-center">Đọc bài viết <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 2 -->
+                <a href="http://trt.com.vn/noi-nhip-nghia-tinh/noi-nhip-nghia-tinh-7-08-2024" target="_blank" class="block bg-white rounded-xl overflow-hidden shadow-md card-hover group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/2563eb/ffffff?text=TRT+News" alt="Đài TRT" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded">Đài Truyền Hình TRT</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2 group-hover:text-blue-600 transition">Phóng sự: "Nối nhịp nghĩa tình - Gương sáng hiếu học"</h3>
+                        <p class="text-sm text-gray-500 mb-4">Phóng sự truyền hình về hành trình học tập và đam mê công nghệ.</p>
+                        <span class="text-blue-600 text-sm font-medium flex items-center">Xem phóng sự <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 3 -->
+                <a href="https://baothuathienhue.vn/giao-duc/cham-den-các-vi-sao-102123.html" target="_blank" class="block bg-white rounded-xl overflow-hidden shadow-md card-hover group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/059669/ffffff?text=Bao+Thua+Thien+Hue" alt="Báo Thừa Thiên Huế" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded">Báo Thừa Thiên Huế</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2 group-hover:text-blue-600 transition">"Chạm đến các vì sao - Lan tỏa đam mê khoa học"</h3>
+                        <p class="text-sm text-gray-500 mb-4">Hoạt động truyền cảm hứng tại CLB Vật Lý Thiên Văn Huế.</p>
+                        <span class="text-blue-600 text-sm font-medium flex items-center">Đọc bài viết <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPACT & COMMUNITY SECTION -->
+    <section id="impact" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-12 items-start">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 google-font">Tác Động Cộng Đồng (Impact)</h2>
+                    <p class="text-gray-600 mb-6 text-lg">
+                        Không chỉ là một lập trình viên, tôi là người xây dựng cầu nối. Tôi tin rằng công nghệ có sức mạnh kết nối và thay đổi cuộc sống.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mt-1">
+                                <i class="fas fa-users text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">Admin Diễn đàn Khoa Học</h4>
+                                <p class="text-gray-600">Quản trị cộng đồng từ 60k lên <span class="font-bold text-gray-800">400.000+ thành viên</span>. Tổ chức 5+ sự kiện online quy mô lớn.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600 mt-1">
+                                <i class="fas fa-laptop-code text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">Game Developer (Mini World)</h4>
+                                <p class="text-gray-600">
+                                    Lập trình game bằng <span class="font-bold text-gray-800">Lua Script & API</span> với <span class="font-bold text-gray-800">324.000+ lượt tải</span>.
+                                    <br>
+                                    Vai trò <strong>Official Platform Critic</strong>: Thẩm định và tuyển chọn sản phẩm cho nền tảng.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- THÊM MỚI: CLB Đường lên đỉnh Olympia -->
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mt-1">
+                                <i class="fas fa-bullhorn text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">Trưởng ban Truyền thông (Olympia)</h4>
+                                <p class="text-gray-600">CLB Đường lên đỉnh Olympia - THPT Hai Bà Trưng. Tái khởi động chương trình và tuyển mộ thành viên.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600 mt-1">
+                                <i class="fas fa-chalkboard-teacher text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">Mentorship & Giáo dục</h4>
+                                <p class="text-gray-600">Trợ giảng và ra đề thi cho đội tuyển HSG Tin học. Speaker tại CLB Thiên văn.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <!-- Kỹ năng đã được nâng cấp đầy đủ -->
+                    <div class="bg-gray-900 rounded-2xl p-8 text-white shadow-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-blue-500 rounded-full opacity-20 blur-2xl"></div>
+                        <div class="absolute bottom-0 left-0 -mb-10 -ml-10 w-40 h-40 bg-red-500 rounded-full opacity-20 blur-2xl"></div>
+                        
+                        <h3 class="text-2xl font-bold mb-6 border-b border-gray-700 pb-4">Hồ Sơ Kỹ Năng (Skillset)</h3>
+                        
+                        <div class="mb-6">
+                            <h4 class="text-sm text-gray-400 uppercase tracking-wider mb-2">Lập Trình & Thuật Toán</h4>
+                            <div class="flex flex-wrap">
+                                <span class="skill-tag"><i class="fab fa-cuttlefish mr-2 text-purple-400"></i> C/C++ (Thành thạo)</span>
+                                <span class="skill-tag"><i class="fab fa-python mr-2 text-yellow-400"></i> Python</span>
+                                <span class="skill-tag"><i class="fas fa-database mr-2 text-green-400"></i> SQL</span>
+                                <span class="skill-tag"><i class="fas fa-code mr-2 text-blue-400"></i> Lua Script</span>
+                                <span class="skill-tag"><i class="fas fa-brain mr-2 text-pink-400"></i> Algorithms</span>
+                            </div>
+                        </div>
+
+                        <!-- ĐÃ SỬA: Thêm CV, NLP, Machine Learning, Deep Learning -->
+                        <div class="mb-6">
+                            <h4 class="text-sm text-gray-400 uppercase tracking-wider mb-2">AI & Machine Learning</h4>
+                            <div class="flex flex-wrap">
+                                <span class="skill-tag"><i class="fas fa-robot mr-2 text-cyan-400"></i> Deep Learning</span>
+                                <span class="skill-tag"><i class="fas fa-brain mr-2 text-purple-400"></i> Machine Learning</span>
+                                <span class="skill-tag"><i class="fas fa-eye mr-2 text-blue-300"></i> Computer Vision (CV)</span>
+                                <span class="skill-tag"><i class="fas fa-language mr-2 text-pink-300"></i> NLP</span>
+                                <span class="skill-tag"><i class="fas fa-project-diagram mr-2 text-orange-400"></i> TensorFlow/PyTorch</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-sm text-gray-400 uppercase tracking-wider mb-2">Công Cụ & Nền Tảng</h4>
+                            <div class="flex flex-wrap">
+                                <span class="skill-tag"><i class="fab fa-git-alt mr-2 text-red-500"></i> Git/GitHub</span>
+                                <span class="skill-tag"><i class="fab fa-linux mr-2 text-white"></i> Linux (Basic)</span>
+                                <span class="skill-tag"><i class="fas fa-cube mr-2 text-blue-300"></i> OOP</span>
+                                <span class="skill-tag"><i class="fas fa-file-alt mr-2 text-teal-300"></i> LaTeX</span>
+                            </div>
+                        </div>
+
+                         <div class="mb-6">
+                            <h4 class="text-sm text-gray-400 uppercase tracking-wider mb-2">Ngoại Ngữ & Kỹ Năng Mềm</h4>
+                            <div class="flex flex-wrap">
+                                <span class="skill-tag"><i class="fas fa-globe-americas mr-2 text-blue-400"></i> English (Professional)</span>
+                                <span class="skill-tag"><i class="fas fa-torii-gate mr-2 text-red-400"></i> Japanese (N4)</span>
+                                <span class="skill-tag"><i class="fas fa-bullhorn mr-2 text-yellow-400"></i> Public Speaking</span>
+                                <span class="skill-tag"><i class="fas fa-users-cog mr-2 text-green-400"></i> Community Building</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section id="achievements" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center google-font">Giải Thưởng & Vinh Danh</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Competitions -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-blue-400 relative">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-trophy text-blue-500 mr-3"></i> Đấu Trường Lập Trình
+                    </h3>
+                    
+                    <!-- ICPC Spotlight Item -->
+                    <div class="mb-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-red-500 text-white text-[10px] uppercase font-bold px-2 py-1 rounded-bl-lg shadow-sm">
+                            Nổi Bật
+                        </div>
+                        <div class="flex items-start relative z-10">
+                            <div class="bg-white p-2 rounded-full shadow-sm mr-4 text-blue-600">
+                                <i class="fas fa-certificate text-xl"></i>
+                            </div>
+                            <div>
+                                <span class="text-blue-900 font-bold block text-lg">ICPC Quốc Gia (National)</span>
+                                <span class="text-blue-700 font-medium text-sm">Honorable Mention (2025)</span>
+                                <div class="mt-2 text-xs text-blue-600 bg-white inline-block px-2 py-1 rounded border border-blue-100">
+                                    <i class="fas fa-check-circle mr-1"></i> Top sinh viên lập trình xuất sắc
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Đại Học -->
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-3 border-b pb-1">Đại Học (University)</h4>
+                            <ul class="space-y-4 pl-2">
+                                <li class="flex items-start group">
+                                    <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded mr-3 mt-1">2025</span>
+                                    <div>
+                                        <span class="font-bold block text-gray-800">Olympic Trí Tuệ Nhân Tạo (AI)</span>
+                                        <span class="text-sm text-gray-500">Vòng Khu vực (Miền Trung)</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start group">
+                                    <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded mr-3 mt-1">2025</span>
+                                    <div>
+                                        <span class="font-bold block text-gray-800">Huy chương Bạc - DUT Code League</span>
+                                        <span class="text-sm text-gray-500">Bảng Code Warrior (Đại học Bách Khoa)</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start group">
+                                    <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded mr-3 mt-1">2024</span>
+                                    <div>
+                                        <span class="font-bold block text-gray-800">Honorable Mention ICPC Miền Trung</span>
+                                        <span class="text-sm text-gray-500">Kỳ thi lập trình sinh viên quốc tế khu vực</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Phổ Thông -->
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-3 border-b pb-1">Phổ Thông (High School)</h4>
+                            <ul class="space-y-4 pl-2">
+                                <li class="flex items-start group">
+                                    <span class="bg-gray-100 text-gray-600 text-xs font-bold px-2 py-1 rounded mr-3 mt-1">2023</span>
+                                    <div>
+                                        <span class="font-bold block text-gray-800">Olympic Tin học Miền Trung - Tây Nguyên</span>
+                                        <span class="text-sm text-gray-500">Giải Khuyến Khích (Bảng Phổ Thông)</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start group">
+                                    <span class="bg-gray-100 text-gray-600 text-xs font-bold px-2 py-1 rounded mr-3 mt-1">2023</span>
+                                    <div>
+                                        <span class="font-bold block text-gray-800">Tin học trẻ Toàn quốc (Khu vực)</span>
+                                        <span class="text-sm text-gray-500">Giải Khuyến Khích</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start group">
+                                    <span class="bg-gray-100 text-gray-600 text-xs font-bold px-2 py-1 rounded mr-3 mt-1">2022-23</span>
+                                    <div>
+                                        <span class="font-bold block text-gray-800">Học Sinh Giỏi Tỉnh Thừa Thiên Huế</span>
+                                        <span class="text-sm text-gray-500">Giải Khuyến Khích (Bảng Chuyên) & Giải Ba (Bảng Phổ Thông)</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scholarships -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-yellow-400">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-certificate text-yellow-500 mr-3"></i> Học Bổng & Vinh Danh
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded mr-3 mt-1">2023</span>
+                            <div>
+                                <span class="font-bold block">Tuyển thẳng 3 Đại học</span>
+                                <span class="text-sm text-gray-500">ĐH Công Nghệ (VNU), Bách Khoa ĐN, VKU</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded mr-3 mt-1">2025</span>
+                            <div>
+                                <span class="font-bold block">Học bổng Hiếu học Huế</span>
+                                <span class="text-sm text-gray-500">Vinh danh tinh thần học tập bền bỉ</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded mr-3 mt-1">2024</span>
+                            <div>
+                                <span class="font-bold block">Học bổng ACECOOK Happy Scholarship</span>
+                                <span class="text-sm text-gray-500">Học bổng doanh nghiệp cho sinh viên xuất sắc</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded mr-3 mt-1">2024</span>
+                            <div>
+                                <span class="font-bold block">Học bổng "Tiếp sức đến trường"</span>
+                                <span class="text-sm text-gray-500">Báo Tuổi Trẻ trao tặng</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold mb-4 google-font">Let's Connect!</h3>
+            <p class="mb-8 text-gray-400">Sẵn sàng đóng góp sức trẻ cho cộng đồng Google Student Ambassadors.</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://linkedin.com/in/tienes2810/" class="bg-gray-700 hover:bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center transition"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Tienes2810" class="bg-gray-700 hover:bg-gray-600 w-12 h-12 rounded-full flex items-center justify-center transition"><i class="fab fa-github"></i></a>
+                <a href="mailto:nguyentien281006@gmail.com" class="bg-gray-700 hover:bg-red-500 w-12 h-12 rounded-full flex items-center justify-center transition"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="text-sm text-gray-500">
+                &copy; 2025 Nguyen Tien. Designed for Google Student Ambassador Application.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
