@@ -8,7 +8,7 @@
     <style>
         @page {
             size: A4;
-            margin: 10mm 12mm;
+            margin: 0;
         }
 
         * {
@@ -19,8 +19,8 @@
 
         body {
             font-family: Calibri, 'Segoe UI', Arial, sans-serif;
-            font-size: 9.6pt;
-            line-height: 1.28;
+            font-size: 9.4pt;
+            line-height: 1.24;
             color: #1F2937;
             background: #f1f5f9;
         }
@@ -29,7 +29,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: 15px auto;
-            padding: 12mm 14mm;
+            padding: 10mm 13mm 9mm;
             background: #ffffff;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         }
@@ -40,10 +40,10 @@
             }
 
             .page {
-                width: 100%;
+                width: auto;
                 min-height: auto;
                 margin: 0;
-                padding: 0;
+                padding: 10mm 13mm 8mm;
                 box-shadow: none;
             }
         }
@@ -51,11 +51,11 @@
         /* Header */
         .header {
             text-align: center;
-            margin-bottom: 6px;
+            margin-bottom: 5px;
         }
 
         .name {
-            font-size: 17pt;
+            font-size: 16pt;
             font-weight: bold;
             letter-spacing: 0.5px;
             text-transform: uppercase;
@@ -64,45 +64,47 @@
         }
 
         .contacts {
-            font-size: 8.8pt;
+            font-size: 8.6pt;
             color: #334155;
+            line-height: 1.35;
         }
 
-        .contacts a {
+        a {
             color: #1B4F9C;
             text-decoration: none;
         }
 
-        .contacts a:hover {
+        a:hover {
             text-decoration: underline;
         }
 
         /* Section */
         .section {
-            margin-top: 6px;
-            margin-bottom: 4px;
+            margin-top: 5px;
+            margin-bottom: 2px;
         }
 
         .section-title {
-            font-size: 10.2pt;
+            font-size: 10pt;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             color: #1B4F9C;
             border-bottom: 1.15pt solid #1B4F9C;
-            padding-bottom: 2px;
-            margin-bottom: 4px;
+            padding-bottom: 1.5px;
+            margin-bottom: 3px;
         }
 
         /* Entry */
         .entry {
-            margin-bottom: 4.5px;
+            margin-bottom: 3.5px;
         }
 
         .row-between {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
+            gap: 10px;
         }
 
         .bold {
@@ -115,25 +117,32 @@
 
         .right-text {
             text-align: right;
-            font-size: 8.8pt;
+            font-size: 8.6pt;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .right-text a {
+            color: #1B4F9C;
+            text-decoration: none;
         }
 
         /* Bullets */
         ul {
             list-style-type: disc;
             margin-left: 15px;
-            margin-top: 1.5px;
+            margin-top: 1px;
         }
 
         li {
-            margin-bottom: 1.5px;
-            font-size: 9.2pt;
+            margin-bottom: 1px;
+            font-size: 9.1pt;
             text-align: justify;
         }
 
         .skills-list li {
             text-align: left;
-            margin-bottom: 2px;
+            margin-bottom: 1.5px;
         }
     </style>
 </head>
@@ -145,13 +154,13 @@
         <header class="header">
             <h1 class="name">Nguyen Tien</h1>
             <div class="contacts">
-                <a href="mailto:nguyentien281006@gmail.com">nguyentien281006@gmail.com</a> &bull; (+84) 857 674 338
-                &bull; Danang, Vietnam &bull; <a href="https://tienes2810.github.io">tienes2810.github.io</a>
-            </div>
-            <div class="contacts" style="margin-top: 2px;">
-                GitHub: <a href="https://github.com/Tienes2810">github.com/Tienes2810</a> &bull; LinkedIn: <a
-                    href="https://linkedin.com/in/tienes2810">linkedin.com/in/tienes2810</a> &bull; Codeforces: <a
-                    href="https://codeforces.com/profile/bkdn25.Tienes">bkdn25.Tienes (Expert, 1731)</a>
+                <a href="mailto:nguyentien281006@gmail.com">nguyentien281006@gmail.com</a>
+                &bull; (+84) 857 674 338
+                &bull; Danang, Vietnam
+                &bull; <a href="https://tienes2810.github.io">tienes2810.github.io</a><br>
+                <a href="https://github.com/Tienes2810">github.com/Tienes2810</a>
+                &bull; <a href="https://linkedin.com/in/tienes2810">linkedin.com/in/tienes2810</a>
+                &bull; <a href="https://codeforces.com/profile/bkdn25.Tienes">bkdn25.Tienes (Expert, 1731)</a>
             </div>
         </header>
 
@@ -208,12 +217,13 @@
 
             <div class="entry">
                 <div class="row-between">
-                    <span><strong class="bold">AgentLens &ndash; Multi-Agent Observability and RCA</strong> | <span
-                            class="italic">LangGraph, FastAPI, pgvector, Next.js</span></span>
-                    <span class="right-text"><a href="https://agentlens.dpdns.org">agentlens.dpdns.org</a> | 2026</span>
+                    <span class="bold">AgentLens &ndash; Multi-Agent Observability and RCA</span>
+                    <span class="right-text"><a href="https://agentlens.dpdns.org">agentlens.dpdns.org</a></span>
                 </div>
-                <div class="italic" style="font-size: 8.8pt;">VinAI Practical Talent Program (Team 083) &ndash;
-                    Full-stack / Agent Engineer</div>
+                <div class="row-between">
+                    <span class="italic" style="font-size: 8.6pt;">VinAI Practical Talent Program (Team 083) &ndash; Full-stack / Agent Engineer</span>
+                    <span class="right-text italic">2026</span>
+                </div>
                 <ul>
                     <li>Shipped a live RCA platform for multi-agent systems with <strong>7 O(1) detectors</strong>
                         (loops, bottlenecks, tool thrashing, token spikes) and a <strong>3-node LangGraph</strong>
@@ -225,14 +235,13 @@
 
             <div class="entry">
                 <div class="row-between">
-                    <span><strong class="bold">VietIDP &ndash; On-premise Vietnamese Document AI</strong> | <span
-                            class="italic">YOLOv8, VietOCR, Qwen2.5, Chroma</span></span>
-                    <span class="right-text"><a
-                            href="https://github.com/Tienes2810/OCR-LLM-RESEARCH">github.com/.../OCR-LLM-RESEARCH</a> |
-                        2025 &ndash; 2026</span>
+                    <span class="bold">VietIDP &ndash; On-premise Vietnamese Document AI</span>
+                    <span class="right-text"><a href="https://github.com/Tienes2810/OCR-LLM-RESEARCH">github.com/Tienes2810/OCR-LLM-RESEARCH</a></span>
                 </div>
-                <div class="italic" style="font-size: 8.8pt;">DUT Faculty of IT Scientific Research Initiative &ndash;
-                    Project Team Lead &amp; Lead AI Developer</div>
+                <div class="row-between">
+                    <span class="italic" style="font-size: 8.6pt;">DUT Faculty of IT Scientific Research Initiative &ndash; Project Team Lead &amp; Lead AI Developer</span>
+                    <span class="right-text italic">2025 &ndash; 2026</span>
+                </div>
                 <ul>
                     <li>Awarded <strong>Honorable Mention (Top 7 Outstanding Projects)</strong> at DUT Faculty
                         Scientific Research Day 2026.</li>
@@ -244,13 +253,13 @@
 
             <div class="entry">
                 <div class="row-between">
-                    <span><strong class="bold">Japanese Learning Platform (PBL3) &ndash; Grade A</strong> | <span
-                            class="italic">React 19, Supabase, Gemini AI</span></span>
-                    <span class="right-text"><a href="https://kanjilearning.vercel.app">kanjilearning.vercel.app</a> |
-                        2026</span>
+                    <span class="bold">Japanese Learning Platform (PBL3) &ndash; Grade A</span>
+                    <span class="right-text"><a href="https://kanjilearning.vercel.app">kanjilearning.vercel.app</a></span>
                 </div>
-                <div class="italic" style="font-size: 8.8pt;">Project Lead &amp; Full-stack Developer &ndash; Repo: <a
-                        href="https://github.com/Thainguyen2103/PBL3">github.com/Thainguyen2103/PBL3</a></div>
+                <div class="row-between">
+                    <span class="italic" style="font-size: 8.6pt;">Project Lead &amp; Full-stack Developer &ndash; <a href="https://github.com/Thainguyen2103/PBL3">github.com/Thainguyen2103/PBL3</a></span>
+                    <span class="right-text italic">2026</span>
+                </div>
                 <ul>
                     <li>Shipped a full-stack Japanese learning app (PvP Arena realtime, Gemini AI coaching, Kanji
                         graphs) with matchmaking that eliminates lobby race conditions via PostgreSQL <code
