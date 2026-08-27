@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="vi" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Tiến | Portfolio</title>
+    <title>Nguyễn Tiến | Applied AI Engineer</title>
+    <meta name="description"
+        content="Nguyễn Tiến — Applied AI Intern. VinSpace, VinUni VRIC, VinSmart Future. Document AI, Multi-agent, MLOps.">
+    <link rel="icon" href="images/avt.JPG">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- KHÔI PHỤC FONT INTER & JETBRAINS MONO CỰC KỲ NÉT VÀ ĐẸP -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .mono { font-family: 'JetBrains Mono', monospace; }
-        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(8px); border-bottom: 1px solid #f1f5f9; }
-        .card-hover { transition: all 0.2s ease-in-out; }
-        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 24px -10px rgba(0,0,0,0.1); border-color: #cbd5e1; }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .card-hover {
+            transition: all 0.2s ease-in-out;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 28px -10px rgba(37, 99, 235, 0.15);
+            border-color: #93c5fd;
+        }
+
         .timeline-dot::before {
             content: '';
             position: absolute;
@@ -21,28 +47,33 @@
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background-color: #3b82f6;
-            border: 3px solid #eff6ff;
+            background-color: #2563eb;
+            border: 3px solid #dbeafe;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+
+<body class="bg-slate-50 text-slate-800 antialiased">
 
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 glass-nav">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="font-bold text-xl tracking-tight text-slate-900">
+            <a href="#about" class="font-bold text-xl tracking-tight text-slate-900">
                 Nguyen <span class="text-blue-600">Tien</span>.
-            </div>
-            <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
+            </a>
+            <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
                 <a href="#about" class="hover:text-blue-600 transition">Giới thiệu</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Dự án</a>
                 <a href="#experience" class="hover:text-blue-600 transition">Kinh nghiệm</a>
                 <a href="#awards" class="hover:text-blue-600 transition">Giải thưởng</a>
                 <a href="#media" class="hover:text-blue-600 transition">Báo chí</a>
             </div>
-            <a href="mailto:nguyentien281006@gmail.com" class="bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">
-                Liên hệ
-            </a>
+            <div class="flex items-center gap-3">
+                <a href="./CV_NguyenTien.pdf" download="CV_NguyenTien.pdf"
+                    class="bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition shadow-sm">
+                    Tải CV (PDF)
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -51,277 +82,379 @@
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-2/3">
                 <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 text-xs font-bold text-blue-700 bg-blue-50 border border-blue-100 rounded-full flex items-center gap-1 shadow-sm">
+                    <span
+                        class="px-3 py-1 text-xs font-bold text-blue-700 bg-blue-50 border border-blue-100 rounded-full flex items-center gap-1 shadow-sm">
                         <i class="fab fa-google"></i> Google Student Ambassador
                     </span>
-                    <span class="px-3 py-1 text-xs font-bold text-purple-700 bg-purple-50 border border-purple-100 rounded-full flex items-center gap-1 shadow-sm">
-                        <i class="fas fa-microscope"></i> AI & LLM Research
+                    <span
+                        class="px-3 py-1 text-xs font-bold text-purple-700 bg-purple-50 border border-purple-100 rounded-full shadow-sm">
+                        VinUniversity × Vingroup · AI Thực Chiến K3
                     </span>
-                    <span class="px-3 py-1 text-xs font-bold text-yellow-700 bg-yellow-50 border border-yellow-100 rounded-full flex items-center gap-1 shadow-sm">
+                    <span
+                        class="px-3 py-1 text-xs font-bold text-amber-700 bg-amber-50 border border-amber-100 rounded-full shadow-sm">
                         <i class="fas fa-trophy"></i> Codeforces: Expert (1731)
                     </span>
-                    <span class="px-3 py-1 text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-100 rounded-full flex items-center gap-1 shadow-sm">
-                        <i class="fas fa-certificate"></i> Stanford ML (Coursera)
+                    <span
+                        class="px-3 py-1 text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-100 rounded-full shadow-sm">
+                        <i class="fas fa-star"></i> GPA 3.33 / 4.0
+                    </span>
+                    <span
+                        class="px-3 py-1 text-xs font-bold text-red-700 bg-red-50 border border-red-100 rounded-full shadow-sm">
+                        Thanh niên tiên tiến 2026 (DUT)
                     </span>
                 </div>
-                
+
                 <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
                     Nguyễn Tiến
                 </h1>
-                
+
                 <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                    Sinh viên <strong>Kỹ sư Công nghệ Thông tin (Chuyên ngành Tiếng Nhật)</strong> tại ĐH Bách Khoa - ĐH Đà Nẵng (2024 - 2029). 
-                    Đam mê Thuật toán, Xây dựng cộng đồng và triển khai các hệ thống AI thực tế. Trưởng nhóm đề tài Nghiên cứu Khoa học đạt giải về <strong>Mô hình ngôn ngữ lớn (LLMs) & OCR</strong>. Thành viên chính thức đội tuyển Olympic Tin học, AI & ICPC của trường.
+                    Sinh viên <strong>Kỹ sư Công nghệ Thông tin (Chuyên ngành Tiếng Nhật)</strong> tại ĐH Bách Khoa — ĐH
+                    Đà Nẵng (2024–2029), GPA <strong>3.33/4.0</strong>.
+                    Học viên <strong>Chương trình Đào tạo 20.000 Nhân tài AI thực chiến — VinUniversity × Vingroup (Khoá
+                        3)</strong>.
+                    Chuyên sâu triển khai hệ thống <strong>Document AI on-premise</strong>, <strong>Multi-Agent Systems
+                        (LangGraph)</strong> và MLOps. Thành viên chính thức đội tuyển Olympic Tin học &amp; ICPC.
+                    Nguyện vọng thực tập: <strong>VinSpace</strong>, <strong>VinUni VRIC</strong>, <strong>VinSmart
+                        Future</strong>.
                 </p>
 
-                <!-- KHU VỰC CÁC NÚT -->
+                <!-- Action Buttons -->
                 <div class="flex flex-wrap gap-3 mb-8">
-                    <a href="./CV_NguyenTien.pdf?v=2" target="_blank" class="px-6 py-2 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition flex items-center gap-2 text-sm shadow-md border border-blue-600">
-                        <i class="fas fa-file-pdf text-lg"></i> Tải CV (PDF)
+                    <a href="./CV_NguyenTien.pdf" download="CV_NguyenTien.pdf"
+                        class="px-6 py-2.5 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition flex items-center gap-2 text-sm shadow-md">
+                        <i class="fas fa-file-pdf"></i> Tải CV (PDF)
                     </a>
-                    <a href="https://github.com/Tienes2810" target="_blank" class="px-4 py-2 bg-slate-100 text-slate-700 font-medium rounded-lg hover:bg-slate-200 transition flex items-center gap-2 text-sm border border-slate-200">
-                        <i class="fab fa-github text-lg"></i> GitHub
+                    <a href="https://github.com/Tienes2810" target="_blank"
+                        class="px-4 py-2.5 bg-slate-100 text-slate-700 font-medium rounded-lg hover:bg-slate-200 transition flex items-center gap-2 text-sm border border-slate-200">
+                        <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a href="https://linkedin.com/in/tienes2810/" target="_blank" class="px-4 py-2 bg-slate-100 text-blue-700 font-medium rounded-lg hover:bg-blue-50 transition flex items-center gap-2 text-sm border border-slate-200">
-                        <i class="fab fa-linkedin text-lg"></i> LinkedIn
+                    <a href="https://linkedin.com/in/tienes2810/" target="_blank"
+                        class="px-4 py-2.5 bg-slate-100 text-blue-700 font-medium rounded-lg hover:bg-blue-50 transition flex items-center gap-2 text-sm border border-slate-200">
+                        <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
-                    <a href="https://codeforces.com/profile/bkdn25.Tienes" target="_blank" class="px-4 py-2 bg-slate-100 text-yellow-600 font-medium rounded-lg hover:bg-yellow-50 transition flex items-center gap-2 text-sm border border-slate-200">
-                        <i class="fas fa-code text-lg"></i> Codeforces
+                    <a href="https://codeforces.com/profile/bkdn25.Tienes" target="_blank"
+                        class="px-4 py-2.5 bg-slate-100 text-amber-700 font-medium rounded-lg hover:bg-amber-50 transition flex items-center gap-2 text-sm border border-slate-200">
+                        <i class="fas fa-code"></i> Codeforces
+                    </a>
+                    <a href="mailto:nguyentien281006@gmail.com"
+                        class="px-4 py-2.5 bg-slate-100 text-slate-700 font-medium rounded-lg hover:bg-slate-200 transition flex items-center gap-2 text-sm border border-slate-200">
+                        <i class="fas fa-envelope"></i> Email
                     </a>
                 </div>
 
-                <!-- Lõi kỹ năng -->
+                <!-- Core Skills -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-slate-100">
                     <div>
                         <div class="text-xs font-bold text-slate-400 uppercase mb-1">Programming</div>
-                        <div class="text-sm font-semibold text-slate-800">C/C++, Java, C#, Python, Lua</div>
+                        <div class="text-sm font-semibold text-slate-800">C/C++, Python, Java, JS/TS, SQL</div>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-slate-400 uppercase mb-1">AI & Data</div>
-                        <div class="text-sm font-semibold text-slate-800">LLMs, OCR, NLP, ML, DL, CV</div>
+                        <div class="text-xs font-bold text-slate-400 uppercase mb-1">AI &amp; Agents</div>
+                        <div class="text-sm font-semibold text-slate-800">LLMs, LangGraph, RAG, OCR, CV</div>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-slate-400 uppercase mb-1">Tools & Libs</div>
-                        <div class="text-sm font-semibold text-slate-800">PyTorch, Git, SQL, LaTeX</div>
+                        <div class="text-xs font-bold text-slate-400 uppercase mb-1">MLOps &amp; Infra</div>
+                        <div class="text-sm font-semibold text-slate-800">Docker, Terraform, FastAPI, AWS/GCP</div>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-slate-400 uppercase mb-1">Languages</div>
-                        <div class="text-sm font-semibold text-slate-800">English (Professional), Japanese (N4)</div>
+                        <div class="text-xs font-bold text-slate-400 uppercase mb-1">Full-stack &amp; Lang</div>
+                        <div class="text-sm font-semibold text-slate-800">React, Next.js, Supabase, JLPT N4</div>
                     </div>
                 </div>
             </div>
 
-            <!-- ẢNH ĐẠI DIỆN -->
+            <!-- Avatar -->
             <div class="md:w-1/3 flex justify-center md:justify-end">
-                <div class="w-64 h-64 md:w-80 md:h-80 bg-slate-200 rounded-full border-4 border-white shadow-xl overflow-hidden relative">
-                    <img src="images/avt.JPG" alt="Nguyen Tien Avatar" class="w-full h-full object-cover" onerror="this.src='https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=e2e8f0'">
+                <div
+                    class="w-64 h-64 md:w-80 md:h-80 bg-slate-200 rounded-full border-4 border-white shadow-xl overflow-hidden relative">
+                    <img src="images/avt.JPG" alt="Nguyen Tien Avatar" class="w-full h-full object-cover"
+                        onerror="this.src='https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=e2e8f0'">
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Kinh Nghiệm & Hoạt Động -->
-    <section id="experience" class="py-16">
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-2xl font-bold mb-8 text-slate-900">Kinh Nghiệm & Hoạt Động Chuyên Môn</h2>
-            
-            <div class="space-y-6">
-                <!-- NCKH -->
-                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-2 h-full bg-purple-500"></div>
-                    <div class="flex flex-col md:flex-row justify-between mb-2">
-                        <h3 class="text-lg font-bold text-blue-600">Trưởng nhóm Nghiên cứu Khoa học (AI)</h3>
-                        <span class="mono text-sm text-purple-700 font-semibold bg-purple-50 px-3 py-1 rounded-full w-max mt-2 md:mt-0">Giải KK (Top 7 Xuất Sắc)</span>
+            <h2 class="text-2xl font-bold mb-8 text-slate-900">Dự Án Nổi Bật</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- AgentLens -->
+                <div
+                    class="bg-slate-50 p-6 rounded-2xl border border-slate-200 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="mono text-xs font-bold text-red-700 bg-red-100/70 px-2.5 py-1 rounded-md">VinAI
+                                Talent Demo Day</span>
+                            <span class="mono text-xs text-slate-400 font-semibold">2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">AgentLens</h3>
+                        <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                            Nền tảng Observability &amp; RCA cho multi-agent: 7 detector O(1) (loop, bottleneck, token
+                            spikes), LangGraph 3-node với span quotes, cơ chế HITL và lọc PII Layer-1.
+                        </p>
                     </div>
-                    <p class="font-medium text-slate-800 mb-1">Khoa CNTT — ĐH Bách Khoa - ĐH Đà Nẵng</p>
-                    <p class="text-sm text-slate-700 italic mb-3">"Nghiên cứu xây dựng hệ thống trích xuất và cấu trúc thông tin tự động từ văn bản hành chính tiếng Việt sử dụng mô hình ngôn ngữ lớn (LLMs) và công nghệ OCR phục vụ công tác chuyển đổi số."</p>
-                    <ul class="list-disc ml-5 text-sm text-slate-600 space-y-1">
-                        <li>Dẫn dắt đội ngũ nghiên cứu, chịu trách nhiệm chính về định hướng thuật toán, thiết kế kiến trúc hệ thống pipeline kết hợp OCR và Prompt Engineering/Fine-tuning LLMs.</li>
-                        <li>Đề tài xuất sắc lọt vào <strong>Top 7 đề tài xuất sắc nhất</strong> và đạt <strong>Giải Khuyến khích cấp Khoa</strong> tại Ngày hội Khoa học Công nghệ, Khởi nghiệp & Đổi mới sáng tạo năm 2026.</li>
-                    </ul>
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span
+                                class="text-xs font-semibold px-2 py-0.5 bg-white rounded border border-slate-200">LangGraph</span>
+                            <span
+                                class="text-xs font-semibold px-2 py-0.5 bg-white rounded border border-slate-200">FastAPI</span>
+                            <span
+                                class="text-xs font-semibold px-2 py-0.5 bg-white rounded border border-slate-200">pgvector</span>
+                        </div>
+                        <a href="https://agentlens.dpdns.org" target="_blank"
+                            class="text-sm font-bold text-blue-600 hover:underline inline-flex items-center gap-1">Live
+                            Demo <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
                 </div>
 
-                <!-- MỚI BỔ SUNG: Đồ án chuyên ngành PBL -->
-                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-2 h-full bg-yellow-500"></div>
-                    <div class="flex flex-col md:flex-row justify-between mb-2">
-                        <h3 class="text-lg font-bold text-blue-600">Đồ án chuyên ngành (PBL 1, 2, 3)</h3>
-                        <span class="mono text-sm text-yellow-700 font-semibold bg-yellow-50 px-3 py-1 rounded-full w-max mt-2 md:mt-0">Đạt Điểm A (PBL1, 2)</span>
+                <!-- VietIDP -->
+                <div
+                    class="bg-slate-50 p-6 rounded-2xl border border-slate-200 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span
+                                class="mono text-xs font-bold text-purple-700 bg-purple-100/70 px-2.5 py-1 rounded-md">NCKH
+                                Top 7 Xuất Sắc</span>
+                            <span class="mono text-xs text-slate-400 font-semibold">2025–2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">VietIDP — Document AI</h3>
+                        <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                            Hệ thống trích xuất văn bản tiếng Việt on-premise: YOLOv8x xoá dấu → EasyOCR + VietOCR →
+                            Qwen2.5-7B (4-bit) JSON → Chroma RAG. Bảo mật 100% dữ liệu nội bộ.
+                        </p>
                     </div>
-                    <p class="font-medium text-slate-800 mb-1">ĐH Bách Khoa - ĐH Đà Nẵng</p>
-                    <ul class="list-disc ml-5 text-sm text-slate-600 space-y-1">
-                        <li><strong>PBL3 (Web Học Kanji):</strong> Đang kiến trúc và phát triển nền tảng web ứng dụng phục vụ học tiếng Nhật (Kỳ hiện tại).</li>
-                        <li><strong>PBL2 (Game Store) & PBL1 (TSP Solver):</strong> Phát triển hệ thống phần mềm quản lý desktop và dẫn dắt team ứng dụng thuật toán tối ưu (Branch & Bound, DP Bitmask) mô phỏng bằng <strong>C & SDL2</strong>, đều đạt <strong>điểm A</strong>.</li>
-                    </ul>
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span
+                                class="text-xs font-semibold px-2 py-0.5 bg-white rounded border border-slate-200">YOLOv8</span>
+                            <span
+                                class="text-xs font-semibold px-2 py-0.5 bg-white rounded border border-slate-200">VietOCR</span>
+                            <span
+                                class="text-xs font-semibold px-2 py-0.5 bg-white rounded border border-slate-200">Qwen2.5</span>
+                        </div>
+                        <a href="https://github.com/Tienes2810/OCR-LLM-RESEARCH" target="_blank"
+                            class="text-sm font-bold text-blue-600 hover:underline inline-flex items-center gap-1">GitHub
+                            Repo <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
                 </div>
 
-                <!-- GSA -->
-                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-2 h-full bg-blue-500"></div>
-                    <div class="flex flex-col md:flex-row justify-between mb-2">
-                        <h3 class="text-lg font-bold text-blue-600">Google Student Ambassador</h3>
-                        <span class="mono text-sm text-blue-700 font-medium bg-blue-50 px-3 py-1 rounded-full w-max mt-2 md:mt-0">2025 - Hiện tại</span>
+                <!-- PBL3 Kanji Learning -->
+                <div
+                    class="bg-slate-50 p-6 rounded-2xl border border-slate-200 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span
+                                class="mono text-xs font-bold text-amber-800 bg-amber-100/70 px-2.5 py-1 rounded-md">Đồ
+                                Án PBL3 · Điểm A</span>
+                            <span class="mono text-xs text-slate-400 font-semibold">2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Japanese Learning Platform</h3>
+                        <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                            Web học tiếng Nhật full-stack: PvP Arena realtime, AI Gemini coaching, cây Kanji (React
+                            Flow), xử lý race-condition bằng PostgreSQL <code>FOR UPDATE SKIP LOCKED</code>.
+                        </p>
                     </div>
-                    <p class="font-medium text-slate-800 mb-2">Mạng lưới Đại sứ Sinh viên Google tại Việt Nam (Đại diện khu vực Miền Trung)</p>
-                    <ul class="list-disc ml-5 text-sm text-slate-600 space-y-1">
-                        <li>Vượt qua hơn 7.000 hồ sơ cạnh tranh trên toàn quốc để chính thức trở thành 1 trong <strong>Top 600 Đại sứ sinh viên Google tại Việt Nam</strong>.</li>
-                        <li>Vinh dực đạt giải thưởng <strong>Top 200 "Gemini Rising Star"</strong> nhờ chuỗi 10+ bài viết truyền thông, lan tỏa kiến thức và công nghệ AI Gemini xuất sắc trên mạng xã hội.</li>
-                        <li>Thành viên Ban tổ chức (BTC) trực tiếp điều phối, triển khai chuỗi sự kiện và Workshop AI Gemini tại Đại học Swinburne và ĐH Bách Khoa Đà Nẵng.</li>
-                    </ul>
-                </div>
-
-                <!-- Diễn đàn Khám Phá Khoa Học -->
-                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover">
-                    <div class="flex flex-col md:flex-row justify-between mb-2">
-                        <h3 class="text-lg font-bold text-blue-600">Quản trị viên (Admin)</h3>
-                        <span class="mono text-sm text-slate-500 font-medium bg-slate-100 px-3 py-1 rounded-full w-max mt-2 md:mt-0">2020 - 2021</span>
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span
+                                class="text-xs font-semibold px-2 py-0.5 bg-white rounded border border-slate-200">React
+                                19</span>
+                            <span
+                                class="text-xs font-semibold px-2 py-0.5 bg-white rounded border border-slate-200">Supabase</span>
+                            <span
+                                class="text-xs font-semibold px-2 py-0.5 bg-white rounded border border-slate-200">Gemini</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://kanjilearning.vercel.app/" target="_blank"
+                                class="text-sm font-bold text-blue-600 hover:underline">Live Demo →</a>
+                            <a href="https://github.com/Thainguyen2103/PBL3" target="_blank"
+                                class="text-sm font-bold text-slate-600 hover:underline">GitHub →</a>
+                        </div>
                     </div>
-                    <p class="font-medium text-slate-800 mb-2">Diễn đàn Khám Phá Khoa Học (Đã dừng hoạt động)</p>
-                    <ul class="list-disc ml-5 text-sm text-slate-600 space-y-1">
-                        <li>Xây dựng định hướng nội dung và phát triển cộng đồng khoa học từ 60.000 lên mốc hơn <strong>400.000 thành viên</strong>.</li>
-                        <li>Chủ trì tổ chức thành công 5+ cuộc thi thử thách kiến thức trực tuyến quy mô lớn, thu hút đông đảo học sinh, sinh viên tham gia.</li>
-                    </ul>
-                </div>
-
-                <!-- Mini World -->
-                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-2 h-full bg-emerald-500"></div>
-                    <div class="flex flex-col md:flex-row justify-between mb-2">
-                        <h3 class="text-lg font-bold text-blue-600">Game Developer & Content Creator</h3>
-                        <span class="mono text-sm text-slate-500 font-medium bg-slate-100 px-3 py-1 rounded-full w-max mt-2 md:mt-0">2020 - 2022</span>
-                    </div>
-                    <p class="font-medium text-slate-800 mb-2">Mini World VN (Remote)</p>
-                    <ul class="list-disc ml-5 text-sm text-slate-600 space-y-1">
-                        <li>Lập trình logic và xây dựng map sử dụng Lua Script và API hệ thống, đạt tổng cộng hơn <strong>324.000 lượt tải</strong>.</li>
-                        <li>Đảm nhiệm vai trò <strong>Official Platform Critic</strong>: Chịu trách nhiệm thẩm định chất lượng nội dung và phê duyệt các sản phẩm công nghệ cho nền tảng.</li>
-                    </ul>
-                </div>
-
-                <!-- Bồi dưỡng HSG -->
-                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover">
-                    <div class="flex flex-col md:flex-row justify-between mb-2">
-                        <h3 class="text-lg font-bold text-blue-600">Trợ giảng & Người ra đề</h3>
-                        <span class="mono text-sm text-slate-500 font-medium bg-slate-100 px-3 py-1 rounded-full w-max mt-2 md:mt-0">2022 - Hiện tại</span>
-                    </div>
-                    <p class="font-medium text-slate-800 mb-2">Bồi dưỡng Đội tuyển HSG Tin học (Thừa Thiên Huế)</p>
-                    <p class="text-slate-600 text-sm">Trực tiếp hướng dẫn tư duy thuật toán nâng cao (C++/Python) cho học sinh cấp 3 chuyên Tin và tham gia ban biên soạn đề thi lập trình cấp trường.</p>
-                </div>
-
-                <!-- CLB Olympia -->
-                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover">
-                    <div class="flex flex-col md:flex-row justify-between mb-2">
-                        <h3 class="text-lg font-bold text-blue-600">Trưởng ban Truyền thông</h3>
-                        <span class="mono text-sm text-slate-500 font-medium bg-slate-100 px-3 py-1 rounded-full w-max mt-2 md:mt-0">2023</span>
-                    </div>
-                    <p class="font-medium text-slate-800 mb-2">CLB Đường lên đỉnh Olympia (THPT Hai Bà Trưng, Huế)</p>
-                    <p class="text-slate-600 text-sm">Tái khởi động mô hình hoạt động của chương trình, chịu trách nhiệm lên kế hoạch chiến dịch quảng bá hình ảnh và tuyển mộ thành viên thế hệ mới.</p>
-                </div>
-
-                <!-- CLB Thiên văn học (Đã cập nhật mốc thời gian thành 2025) -->
-                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover">
-                    <div class="flex flex-col md:flex-row justify-between mb-2">
-                        <h3 class="text-lg font-bold text-blue-600">Thành viên Hoạt động Tích cực</h3>
-                        <span class="mono text-sm text-slate-500 font-medium bg-slate-100 px-3 py-1 rounded-full w-max mt-2 md:mt-0">2025</span>
-                    </div>
-                    <p class="font-medium text-slate-800 mb-2">CLB Thiên văn học Đà Nẵng (Trực thuộc Hội Sinh viên ĐHĐN)</p>
-                    <p class="text-slate-600 text-sm">Tham gia hỗ trợ tổ chức các hoạt động quan sát thiên văn kỹ thuật số, giao lưu kiến thức khoa học vũ trụ và kết nối cộng đồng sinh viên đam mê khoa học tại Đà Nẵng.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Giải Thưởng Lập Trình & Thuật Toán -->
+    <!-- Experience Section -->
+    <section id="experience" class="py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-8 text-slate-900">Kinh Nghiệm &amp; Hoạt Động Chuyên Môn</h2>
+
+            <div class="space-y-6">
+                <!-- VinGroup Practical AI -->
+                <div
+                    class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-red-500"></div>
+                    <div class="flex flex-col md:flex-row justify-between mb-2">
+                        <h3 class="text-lg font-bold text-blue-600">Chương trình Đào tạo 20.000 Nhân tài AI thực chiến — VinUniversity × Vingroup</h3>
+                        <span
+                            class="mono text-sm text-red-700 font-semibold bg-red-50 px-3 py-1 rounded-full w-max mt-2 md:mt-0">Khoá 3 · 2026</span>
+                    </div>
+                    <p class="font-medium text-slate-800 mb-1">Học viên (ID: 2A202601655) — Khoá 3, <strong>Track 2: AI Infrastructure</strong></p>
+                    <ul class="list-disc ml-5 text-sm text-slate-600 space-y-1">
+                        <li>Chuyên sâu hạ tầng để AI chạy ổn định: data pipeline, lakehouse, vector/feature store (Qdrant, Feast, pgvector), model serving (llama.cpp, TTFT/P99), monitoring, HA/DR.</li>
+                        <li>MLOps và cloud: Terraform (AWS/GCP), Docker, CI/CD, MLflow, DVC, FastAPI, data governance; backend/data engineering cho hệ thống AI.</li>
+                    </ul>
+                </div>
+
+                <!-- NCKH -->
+                <div
+                    class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-purple-500"></div>
+                    <div class="flex flex-col md:flex-row justify-between mb-2">
+                        <h3 class="text-lg font-bold text-blue-600">Trưởng nhóm Nghiên cứu Khoa học (AI)</h3>
+                        <span
+                            class="mono text-sm text-purple-700 font-semibold bg-purple-50 px-3 py-1 rounded-full w-max mt-2 md:mt-0">Giải
+                            KK (Top 7 Xuất Sắc)</span>
+                    </div>
+                    <p class="font-medium text-slate-800 mb-1">Khoa CNTT — ĐH Bách Khoa - ĐH Đà Nẵng (2025–2026)</p>
+                    <p class="text-sm text-slate-700 italic mb-2">"Nghiên cứu xây dựng hệ thống trích xuất và cấu trúc
+                        thông tin tự động từ văn bản hành chính tiếng Việt sử dụng mô hình ngôn ngữ lớn (LLMs) và công
+                        nghệ OCR."</p>
+                    <ul class="list-disc ml-5 text-sm text-slate-600 space-y-1">
+                        <li>Dẫn dắt thiết kế pipeline on-premise: YOLOv8x (xoá dấu đỏ) → OCR → LLM Qwen2.5-7B JSON
+                            extraction → Chroma RAG.</li>
+                        <li>Đạt <strong>Top 7 đề tài xuất sắc nhất</strong> cấp Khoa tại Ngày hội NCKH &amp; Đổi mới
+                            sáng tạo 2026.</li>
+                    </ul>
+                </div>
+
+                <!-- PBL Projects -->
+                <div
+                    class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-amber-500"></div>
+                    <div class="flex flex-col md:flex-row justify-between mb-2">
+                        <h3 class="text-lg font-bold text-blue-600">Đồ án chuyên ngành (PBL 1, 2, 3)</h3>
+                        <span
+                            class="mono text-sm text-amber-700 font-semibold bg-amber-50 px-3 py-1 rounded-full w-max mt-2 md:mt-0">Đều
+                            Đạt Điểm A</span>
+                    </div>
+                    <p class="font-medium text-slate-800 mb-1">ĐH Bách Khoa - ĐH Đà Nẵng</p>
+                    <ul class="list-disc ml-5 text-sm text-slate-600 space-y-1">
+                        <li><strong>PBL3 (Web Học Tiếng Nhật):</strong> Trưởng nhóm &amp; Lập trình full-stack, ứng dụng
+                            React 19, Supabase Realtime, PL/pgSQL chống race-condition.</li>
+                        <li><strong>PBL2 (Game Store) &amp; PBL1 (TSP Solver):</strong> Phát triển desktop app và mô
+                            phỏng thuật toán tối ưu (Branch &amp; Bound, DP Bitmask) bằng C/C++ và SDL2.</li>
+                    </ul>
+                </div>
+
+                <!-- GSA -->
+                <div
+                    class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-blue-500"></div>
+                    <div class="flex flex-col md:flex-row justify-between mb-2">
+                        <h3 class="text-lg font-bold text-blue-600">Google Student Ambassador</h3>
+                        <span
+                            class="mono text-sm text-blue-700 font-medium bg-blue-50 px-3 py-1 rounded-full w-max mt-2 md:mt-0">2025
+                            – Hiện tại</span>
+                    </div>
+                    <p class="font-medium text-slate-800 mb-2">Mạng lưới Đại sứ Sinh viên Google tại Việt Nam (Đại diện
+                        miền Trung)</p>
+                    <ul class="list-disc ml-5 text-sm text-slate-600 space-y-1">
+                        <li>Vượt hơn 7.000 ứng viên để lọt vào <strong>Top 600 Đại sứ chính thức</strong> trên toàn
+                            quốc.</li>
+                        <li>Đạt danh hiệu <strong>Top 200 "Gemini Rising Star"</strong> nhờ tổ chức các workshop AI
+                            Gemini tại Swinburne và DUT.</li>
+                    </ul>
+                </div>
+
+                <!-- Technical Communities -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover">
+                    <div class="flex flex-col md:flex-row justify-between mb-2">
+                        <h3 class="text-lg font-bold text-blue-600">Cộng Đồng Công Nghệ &amp; Huấn Luyện Thuật Toán</h3>
+                        <span
+                            class="mono text-sm text-slate-500 font-medium bg-slate-100 px-3 py-1 rounded-full w-max mt-2 md:mt-0">2020
+                            – Hiện tại</span>
+                    </div>
+                    <ul class="list-disc ml-5 text-sm text-slate-600 space-y-1">
+                        <li><strong>Diễn đàn Khám Phá Khoa Học (2020–2021):</strong> Phát triển cộng đồng từ 60.000 lên
+                            hơn <strong>400.000 thành viên</strong>.</li>
+                        <li><strong>Mini World VN (2020–2022):</strong> Lập trình map qua Lua Script đạt hơn
+                            <strong>324.000 lượt tải</strong>; đảm nhiệm Official Platform Critic.
+                        </li>
+                        <li><strong>Bồi dưỡng HSG Tin học Huế (2022–Hiện tại):</strong> Hướng dẫn tư duy thuật toán nâng
+                            cao (C++/DSA) cho học sinh chuyên Tin.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
     <section id="awards" class="py-16 bg-white border-y border-slate-100">
         <div class="max-w-6xl mx-auto px-6 flex flex-col lg:flex-row gap-12">
-            
+
             <div class="lg:w-1/2">
                 <h2 class="text-2xl font-bold mb-6 text-slate-900 flex items-center gap-2">
-                    <i class="fas fa-code text-blue-600"></i> Thuật Toán & Nghiên Cứu
+                    <i class="fas fa-code text-blue-600"></i> Thuật Toán &amp; Nghiên Cứu
                 </h2>
-                
+
                 <div class="pl-6 border-l-2 border-slate-200 space-y-8 relative ml-2">
-                    <!-- Đại học -->
                     <div class="relative timeline-dot">
-                        <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider mb-3">Đại Học (University)</h3>
+                        <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider mb-3">Đại Học</h3>
                         <ul class="space-y-4 text-sm text-slate-600">
                             <li>
-                                <div class="font-semibold text-slate-900">Giải Khuyến khích Nghiên cứu Khoa học cấp Khoa</div>
+                                <div class="font-semibold text-slate-900">Codeforces Expert (Max Rating: 1731)</div>
+                                <div class="text-blue-600 font-medium mt-0.5">Top lập trình thi đấu sinh viên tại Việt
+                                    Nam</div>
+                            </li>
+                            <li>
+                                <div class="font-semibold text-slate-900">Giải Khuyến khích NCKH cấp Khoa (Top 7 Xuất
+                                    sắc)</div>
                                 <div class="flex justify-between items-center mt-1">
-                                    <span class="text-purple-600 font-medium">Top 7 Đề tài Xuất sắc nhất (Mô hình LLMs & OCR)</span> <span class="mono text-slate-400">2026</span>
+                                    <span class="text-purple-600 font-medium">Đề tài Document AI &amp; OCR</span> <span
+                                        class="mono text-slate-400">2026</span>
                                 </div>
                             </li>
                             <li>
-                                <div class="font-semibold text-slate-900">Kỳ thi ICPC Quốc gia (National)</div>
+                                <div class="font-semibold text-slate-900">Kỳ thi ICPC Quốc gia &amp; ICPC Miền Nam</div>
                                 <div class="flex justify-between items-center mt-1">
-                                    <span>Honorable Mention (Giải Khuyến khích)</span> <span class="mono text-slate-400">2025</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="font-semibold text-slate-900">Kỳ thi ICPC Vòng loại Miền Nam</div>
-                                <div class="flex justify-between items-center mt-1">
-                                    <span>Honorable Mention (Giải Khuyến khích)</span> <span class="mono text-slate-400">2025</span>
+                                    <span>Honorable Mention (Giải Khuyến khích)</span> <span
+                                        class="mono text-slate-400">2025</span>
                                 </div>
                             </li>
                             <li>
                                 <div class="font-semibold text-slate-900">Cuộc thi DUT Code League</div>
                                 <div class="flex justify-between items-center mt-1">
-                                    <span class="text-blue-600 font-medium">Huy chương Bạc (Bảng Code Warrior)</span> <span class="mono text-slate-400">2025</span>
+                                    <span class="text-blue-600 font-medium">Huy chương Bạc (Code Warrior)</span> <span
+                                        class="mono text-slate-400">2025</span>
                                 </div>
                             </li>
                             <li>
                                 <div class="font-semibold text-slate-900">Olympic Trí tuệ Nhân tạo (AI) Miền Trung</div>
                                 <div class="flex justify-between items-center mt-1">
-                                    <span>Tham gia Vòng khu vực (Top 5 DUT)</span> <span class="mono text-slate-400">2025</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="font-semibold text-slate-900">Kỳ thi ICPC Vòng loại Miền Bắc & Miền Trung</div>
-                                <div class="flex justify-between items-center mt-1">
-                                    <span>Chứng nhận Tham gia</span> <span class="mono text-slate-400">2025</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="font-semibold text-slate-900">Kỳ thi ICPC Khu vực Miền Trung</div>
-                                <div class="flex justify-between items-center mt-1">
-                                    <span>Honorable Mention (Giải Khuyến khích)</span> <span class="mono text-slate-400">2024</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="font-semibold text-slate-900">Kỳ thi ICPC Vòng loại 3 miền</div>
-                                <div class="flex justify-between items-center mt-1">
-                                    <span>Chứng nhận Tham gia</span> <span class="mono text-slate-400">2024</span>
+                                    <span>Vòng khu vực (Top 5 DUT)</span> <span class="mono text-slate-400">2025</span>
                                 </div>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- Phổ thông -->
                     <div class="relative timeline-dot">
-                        <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider mb-3">Phổ Thông (High School)</h3>
+                        <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider mb-3">Phổ Thông</h3>
                         <ul class="space-y-4 text-sm text-slate-600">
                             <li>
                                 <div class="font-semibold text-slate-900">VNOI CUP 2023</div>
-                                <div class="flex justify-between items-center mt-1">
-                                    <span>Tham gia Vòng Chung kết (Bảng Mở rộng)</span> <span class="mono text-slate-400">2023</span>
-                                </div>
+                                <div class="flex justify-between items-center mt-1"><span>Chung kết Toàn quốc (Bảng Mở
+                                        rộng)</span> <span class="mono text-slate-400">2023</span></div>
                             </li>
                             <li>
-                                <div class="font-semibold text-slate-900">Olympic Tin học Miền Trung - Tây Nguyên</div>
-                                <div class="flex justify-between items-center mt-1">
-                                    <span>Giải Khuyến Khích</span> <span class="mono text-slate-400">2023</span>
-                                </div>
+                                <div class="font-semibold text-slate-900">Olympic Tin học Miền Trung - Tây Nguyên &amp;
+                                    Tin học trẻ Toàn quốc</div>
+                                <div class="flex justify-between items-center mt-1"><span>Giải Khuyến Khích</span> <span
+                                        class="mono text-slate-400">2023</span></div>
                             </li>
                             <li>
-                                <div class="font-semibold text-slate-900">Hội thi Tin học trẻ Toàn quốc</div>
-                                <div class="flex justify-between items-center mt-1">
-                                    <span>Giải Khuyến Khích (Vòng khu vực)</span> <span class="mono text-slate-400">2023</span>
+                                <div class="font-semibold text-slate-900">Kỳ thi HSG Tin học cấp Tỉnh (Thừa Thiên Huế)
                                 </div>
-                            </li>
-                            <li>
-                                <div class="font-semibold text-slate-900">Kỳ thi HSG Tin học cấp Tỉnh (Thừa Thiên Huế)</div>
                                 <div class="mt-1 space-y-1">
-                                    <div class="flex justify-between"><span>Giải Khuyến Khích (Bảng Chuyên)</span> <span class="mono text-slate-400">2023</span></div>
-                                    <div class="flex justify-between"><span>Giải Ba (Bảng Phổ thông)</span> <span class="mono text-slate-400">2022-2023</span></div>
+                                    <div class="flex justify-between"><span>Giải Khuyến Khích (Bảng Chuyên)</span> <span
+                                            class="mono text-slate-400">2023</span></div>
+                                    <div class="flex justify-between"><span>Giải Ba (Bảng Phổ thông)</span> <span
+                                            class="mono text-slate-400">2022-2023</span></div>
                                 </div>
                             </li>
                         </ul>
@@ -331,60 +464,54 @@
 
             <div class="lg:w-1/2">
                 <h2 class="text-2xl font-bold mb-6 text-slate-900 flex items-center gap-2">
-                    <i class="fas fa-medal text-yellow-500"></i> Học Bổng & Chứng Nhận
+                    <i class="fas fa-medal text-amber-500"></i> Danh Hiệu &amp; Học Bổng
                 </h2>
-                
+
                 <div class="space-y-4">
-                    <!-- Stanford ML Specialization -->
-                    <div class="bg-emerald-50 p-4 rounded-lg border border-emerald-200">
+                    <div class="bg-red-50 p-4 rounded-lg border border-red-200 shadow-sm">
                         <div class="flex justify-between items-start mb-1">
-                            <h4 class="font-bold text-emerald-900">Machine Learning Specialization</h4>
-                            <span class="mono text-xs text-emerald-700 bg-white px-2 py-1 rounded">Chứng chỉ</span>
+                            <h4 class="font-bold text-red-900">Thanh niên tiên tiến làm theo lời Bác</h4>
+                            <span class="mono text-xs text-red-700 bg-white px-2 py-1 rounded font-bold">2026</span>
                         </div>
-                        <p class="text-sm text-emerald-700 font-medium">Được cấp bởi Stanford University thông qua nền tảng Coursera.</p>
+                        <p class="text-sm text-red-700 font-medium">Danh hiệu tiêu biểu cấp Trường ĐH Bách Khoa — ĐH Đà
+                            Nẵng.</p>
                     </div>
 
-                    <!-- Google Career Certificates Scholarship -->
+                    <div class="bg-emerald-50 p-4 rounded-lg border border-emerald-200">
+                        <div class="flex justify-between items-start mb-1">
+                            <h4 class="font-bold text-emerald-900">Stanford Machine Learning Specialization</h4>
+                            <span class="mono text-xs text-emerald-700 bg-white px-2 py-1 rounded">Coursera</span>
+                        </div>
+                        <p class="text-sm text-emerald-700 font-medium">Chứng chỉ hoàn thành xuất sắc cấp bởi Stanford
+                            University &amp; DeepLearning.AI.</p>
+                    </div>
+
                     <div class="bg-blue-50 p-4 rounded-lg border border-blue-200 shadow-sm">
                         <div class="flex justify-between items-start mb-1">
                             <h4 class="font-bold text-blue-900">Google Career Certificates Scholarship</h4>
                             <span class="mono text-xs text-blue-700 bg-white px-2 py-1 rounded font-bold">2026</span>
                         </div>
-                        <p class="text-sm text-blue-700 font-medium">Học bổng chương trình đào tạo nhân lực số chuyên sâu cấp bởi Google chuyên ngành Công nghệ thông tin.</p>
+                        <p class="text-sm text-blue-700 font-medium">Học bổng chương trình đào tạo nhân lực số quốc tế
+                            chuyên ngành CNTT của Google.</p>
                     </div>
 
                     <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
                         <div class="flex justify-between items-start mb-1">
                             <h4 class="font-bold text-slate-900">Tuyển thẳng 3 trường Đại học hàng đầu</h4>
-                            <span class="mono text-xs text-slate-500 bg-white px-2 py-1 rounded">Tuyển sinh</span>
-                        </div>
-                        <p class="text-sm text-slate-600">ĐH Công nghệ (ĐHQGHN), ĐH Bách Khoa Đà Nẵng, ĐH CNTT&TT Việt - Hàn.</p>
-                    </div>
-
-                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
-                        <div class="flex justify-between items-start mb-1">
-                            <h4 class="font-bold text-slate-900">ACECOOK HAPPY SCHOLARSHIP</h4>
                             <span class="mono text-xs text-slate-500 bg-white px-2 py-1 rounded">2024</span>
                         </div>
-                        <p class="text-sm text-slate-600">Học bổng Doanh nghiệp.</p>
-                    </div>
-
-                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
-                        <div class="flex justify-between items-start mb-1">
-                            <h4 class="font-bold text-slate-900">Học bổng "Tiếp sức đến trường"</h4>
-                            <span class="mono text-xs text-slate-500 bg-white px-2 py-1 rounded">2024</span>
-                        </div>
-                        <p class="text-sm text-slate-600">Do Báo Tuổi Trẻ trao tặng.</p>
+                        <p class="text-sm text-slate-600">ĐH Bách Khoa Đà Nẵng (DUT), ĐH Công nghệ (VNU-UET), ĐH CNTT
+                            Việt - Hàn (VKU).</p>
                     </div>
 
                     <div class="grid grid-cols-2 gap-4">
-                         <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
-                            <div class="font-bold text-sm text-slate-900">Học bổng Hiếu học Huế & Khuyến học</div>
-                            <div class="mono text-xs text-slate-500 mt-1">2025</div>
+                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                            <div class="font-bold text-sm text-slate-900">Học bổng Acecook Happy</div>
+                            <div class="mono text-xs text-slate-500 mt-1">2024</div>
                         </div>
                         <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
-                            <div class="font-bold text-sm text-slate-900">Học bổng Thành Nhân, Học bổng Xèo Chu</div>
-                            <div class="mono text-xs text-slate-500 mt-1">2024</div>
+                            <div class="font-bold text-sm text-slate-900">Học bổng Tiếp sức đến trường</div>
+                            <div class="mono text-xs text-slate-500 mt-1">2024 (Báo Tuổi Trẻ)</div>
                         </div>
                     </div>
                 </div>
@@ -392,56 +519,72 @@
         </div>
     </section>
 
-    <!-- Báo chí -->
+    <!-- Media Section -->
     <section id="media" class="py-16">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-2xl font-bold mb-8 text-slate-900 text-center">Báo Chí & Truyền Thông</h2>
-            
+            <h2 class="text-2xl font-bold mb-8 text-slate-900 text-center">Báo Chí &amp; Truyền Thông</h2>
             <div class="grid md:grid-cols-3 gap-6">
-                <a href="https://tuoitre.vn/kho-chong-chat-khong-danh-guc-duoc-chang-trai-sang-tao-van-trung-tuyen-3-truong-top-dau-20240828224431315.htm" target="_blank" class="block bg-white p-5 rounded-xl border border-slate-200 card-hover group">
+                <a href="https://tuoitre.vn/kho-chong-chat-khong-danh-guc-duoc-chang-trai-sang-tao-van-trung-tuyen-3-truong-top-dau-20240828224431315.htm"
+                    target="_blank" class="block bg-white p-5 rounded-xl border border-slate-200 card-hover group">
                     <div class="flex items-center gap-3 mb-3">
-                        <img src="https://tuoitre.vn/favicon.ico" alt="Tuổi Trẻ" class="w-6 h-6 grayscale group-hover:grayscale-0" onerror="this.style.display='none';">
+                        <img src="https://tuoitre.vn/favicon.ico" alt="Tuổi Trẻ"
+                            class="w-6 h-6 grayscale group-hover:grayscale-0" onerror="this.style.display='none';">
                         <h4 class="font-bold text-slate-900 group-hover:text-blue-600 transition">Báo Tuổi Trẻ</h4>
                     </div>
-                    <p class="text-sm text-slate-600 mb-4">"Khó khăn chồng chất không đánh gục được chàng trai sáng tạo vẫn trúng tuyển 3 trường top đầu"</p>
-                    <span class="text-xs font-bold text-blue-600 flex items-center gap-1">Đọc bài viết <i class="fas fa-arrow-right"></i></span>
+                    <p class="text-sm text-slate-600 mb-4">"Khó khăn chồng chất không đánh gục được chàng trai sáng tạo
+                        vẫn trúng tuyển 3 trường top đầu"</p>
+                    <span class="text-xs font-bold text-blue-600 flex items-center gap-1">Đọc bài viết <i
+                            class="fas fa-arrow-right"></i></span>
                 </a>
 
-                <a href="http://trt.com.vn/noi-nhip-nghia-tinh/noi-nhip-nghia-tinh-7-08-2024" target="_blank" class="block bg-white p-5 rounded-xl border border-slate-200 card-hover group">
+                <a href="http://trt.com.vn/noi-nhip-nghia-tinh/noi-nhip-nghia-tinh-7-08-2024" target="_blank"
+                    class="block bg-white p-5 rounded-xl border border-slate-200 card-hover group">
                     <div class="flex items-center gap-3 mb-3">
-                        <div class="w-6 h-6 bg-slate-100 rounded flex items-center justify-center text-slate-500 group-hover:text-blue-600 transition">
+                        <div
+                            class="w-6 h-6 bg-slate-100 rounded flex items-center justify-center text-slate-500 group-hover:text-blue-600 transition">
                             <i class="fas fa-tv text-xs"></i>
                         </div>
-                        <h4 class="font-bold text-slate-900 group-hover:text-blue-600 transition">Đài Truyền Hình TRT</h4>
+                        <h4 class="font-bold text-slate-900 group-hover:text-blue-600 transition">Đài Truyền Hình TRT
+                        </h4>
                     </div>
                     <p class="text-sm text-slate-600 mb-4">Phóng sự: "Nối nhịp nghĩa tình - Gương sáng hiếu học"</p>
-                    <span class="text-xs font-bold text-blue-600 flex items-center gap-1">Xem phóng sự <i class="fas fa-arrow-right"></i></span>
+                    <span class="text-xs font-bold text-blue-600 flex items-center gap-1">Xem phóng sự <i
+                            class="fas fa-arrow-right"></i></span>
                 </a>
 
-                <a href="https://baothuathienhue.vn/giao-duc/cham-den-cac-vi-sao-102123.html" target="_blank" class="block bg-white p-5 rounded-xl border border-slate-200 card-hover group">
+                <a href="https://baothuathienhue.vn/giao-duc/cham-den-cac-vi-sao-102123.html" target="_blank"
+                    class="block bg-white p-5 rounded-xl border border-slate-200 card-hover group">
                     <div class="flex items-center gap-3 mb-3">
-                         <div class="w-6 h-6 bg-slate-100 rounded flex items-center justify-center text-slate-500 group-hover:text-emerald-600 transition">
+                        <div
+                            class="w-6 h-6 bg-slate-100 rounded flex items-center justify-center text-slate-500 group-hover:text-emerald-600 transition">
                             <i class="fas fa-newspaper text-xs"></i>
                         </div>
-                        <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition">Báo Thừa Thiên Huế</h4>
+                        <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition">Báo Thừa Thiên Huế
+                        </h4>
                     </div>
                     <p class="text-sm text-slate-600 mb-4">"Chạm đến các vì sao - Lan tỏa đam mê khoa học"</p>
-                    <span class="text-xs font-bold text-blue-600 flex items-center gap-1">Đọc bài viết <i class="fas fa-arrow-right"></i></span>
+                    <span class="text-xs font-bold text-blue-600 flex items-center gap-1">Đọc bài viết <i
+                            class="fas fa-arrow-right"></i></span>
                 </a>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-slate-900 text-slate-400 py-8 text-center border-t border-slate-800">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-            <div class="text-sm">&copy; 2026 Nguyen Tien. All information verified.</div>
+            <div class="text-sm">&copy; 2026 Nguyen Tien. Applied AI Engineer Intern.</div>
             <div class="flex gap-4">
-                <a href="https://linkedin.com/in/tienes2810/" class="hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
-                <a href="https://github.com/Tienes2810" class="hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
-                <a href="mailto:nguyentien281006@gmail.com" class="hover:text-white transition"><i class="fas fa-envelope text-xl"></i></a>
+                <a href="https://linkedin.com/in/tienes2810/" class="hover:text-white transition"><i
+                        class="fab fa-linkedin text-xl"></i></a>
+                <a href="https://github.com/Tienes2810" class="hover:text-white transition"><i
+                        class="fab fa-github text-xl"></i></a>
+                <a href="mailto:nguyentien281006@gmail.com" class="hover:text-white transition"><i
+                        class="fas fa-envelope text-xl"></i></a>
             </div>
         </div>
     </footer>
 
 </body>
+
 </html>

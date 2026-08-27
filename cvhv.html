@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV_NguyenTien_Harvard</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 10mm 12mm;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+            font-size: 9.6pt;
+            line-height: 1.28;
+            color: #1F2937;
+            background: #f1f5f9;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 15px auto;
+            padding: 12mm 14mm;
+            background: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        @media print {
+            body {
+                background: #ffffff;
+            }
+
+            .page {
+                width: 100%;
+                min-height: auto;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 6px;
+        }
+
+        .name {
+            font-size: 17pt;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+            color: #1B4F9C;
+        }
+
+        .contacts {
+            font-size: 8.8pt;
+            color: #334155;
+        }
+
+        .contacts a {
+            color: #1B4F9C;
+            text-decoration: none;
+        }
+
+        .contacts a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section */
+        .section {
+            margin-top: 6px;
+            margin-bottom: 4px;
+        }
+
+        .section-title {
+            font-size: 10.2pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #1B4F9C;
+            border-bottom: 1.15pt solid #1B4F9C;
+            padding-bottom: 2px;
+            margin-bottom: 4px;
+        }
+
+        /* Entry */
+        .entry {
+            margin-bottom: 4.5px;
+        }
+
+        .row-between {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .right-text {
+            text-align: right;
+            font-size: 8.8pt;
+        }
+
+        /* Bullets */
+        ul {
+            list-style-type: disc;
+            margin-left: 15px;
+            margin-top: 1.5px;
+        }
+
+        li {
+            margin-bottom: 1.5px;
+            font-size: 9.2pt;
+            text-align: justify;
+        }
+
+        .skills-list li {
+            text-align: left;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="name">Nguyen Tien</h1>
+            <div class="contacts">
+                <a href="mailto:nguyentien281006@gmail.com">nguyentien281006@gmail.com</a> &bull; (+84) 857 674 338
+                &bull; Danang, Vietnam &bull; <a href="https://tienes2810.github.io">tienes2810.github.io</a>
+            </div>
+            <div class="contacts" style="margin-top: 2px;">
+                GitHub: <a href="https://github.com/Tienes2810">github.com/Tienes2810</a> &bull; LinkedIn: <a
+                    href="https://linkedin.com/in/tienes2810">linkedin.com/in/tienes2810</a> &bull; Codeforces: <a
+                    href="https://codeforces.com/profile/bkdn25.Tienes">bkdn25.Tienes (Expert, 1731)</a>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p style="font-size: 9.2pt; text-align: justify;">
+                Second-year IT student (Japanese Specialization) at DUT; trainee in the <strong>20,000 Practical AI Talents Training Program (VinUniversity &times; Vingroup)</strong> (Cohort 3). <strong>Codeforces Expert (Max Rating: 1731)</strong> with multiple ICPC awards. Experienced in shipping guarded LLM/agent systems, on-premise Document AI pipelines, and cloud/MLOps infrastructure. Seeking placement at <strong>VinSpace</strong>, <strong>VinUni VRIC</strong> (AI for VinMEC / GSM), and <strong>VinSmart Future</strong>. Japanese JLPT N4 (pursuing N3).
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="entry">
+                <div class="row-between">
+                    <span class="bold">Danang University of Technology (DUT) &ndash; The University of Danang</span>
+                    <span class="right-text">Danang, Vietnam</span>
+                </div>
+                <div class="row-between">
+                    <span class="italic">B.E. in Information Technology (Japanese Specialization Program) &ndash;
+                        <strong style="font-style: normal;">GPA: 3.33 / 4.0</strong></span>
+                    <span class="right-text italic">2024 &ndash; 2029</span>
+                </div>
+                <ul>
+                    <li><strong>Honors Admission:</strong> Directly/early admitted to 3 top-tier tech universities (DUT, VNU-UET, VKU); selected member of DUT's official Informatics Olympiad &amp; ICPC teams.</li>
+                    <li><strong>20,000 Practical AI Talents Training Program (VinUniversity &times; Vingroup):</strong> Cohort 3 (ID: 2A202601655, Jul 2026 &ndash; Present), <strong>Track 2: AI Infrastructure</strong> &mdash; data pipelines, lakehouse, vector/feature store, model serving (llama.cpp, TTFT/P99), MLOps (MLflow, DVC), Terraform/AWS/GCP, Docker, CI/CD, monitoring, HA/DR, data governance.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul class="skills-list" style="margin-top: 2px;">
+                <li><strong>Programming &amp; DSA:</strong> C/C++ (competitive, advanced), Python, Java, C#,
+                    JavaScript/TypeScript, SQL, Lua, algorithms &amp; optimization.</li>
+                <li><strong>AI, LLM &amp; Agents:</strong> LangGraph, Multi-Agent Systems, RAG, Tool Calling, Prompt
+                    Engineering, Document AI / OCR (EasyOCR, VietOCR, YOLOv8), CV, NLP, PyTorch, QLoRA, Ollama, Gemini,
+                    GGUF serving.</li>
+                <li><strong>MLOps &amp; Infra:</strong> Docker, Terraform, AWS/GCP, FastAPI, MLflow, DVC, GitHub
+                    Actions, llama.cpp (TTFT/P99), Lakehouse, Vector Stores (Qdrant, pgvector, Chroma, FAISS), Feast,
+                    HA/DR, PII Guardrails, Langfuse.</li>
+                <li><strong>Full-stack &amp; DB:</strong> React, Next.js, Node.js/Express, PostgreSQL, Supabase (Auth,
+                    Realtime, RLS), Tailwind CSS, SQLAlchemy.</li>
+                <li><strong>Languages:</strong> English (Professional Working), Japanese (JLPT N4, actively pursuing
+                    N3).</li>
+            </ul>
+        </section>
+
+        <!-- Selected Projects -->
+        <section class="section">
+            <h2 class="section-title">Selected Projects</h2>
+
+            <div class="entry">
+                <div class="row-between">
+                    <span><strong class="bold">AgentLens &ndash; Multi-Agent Observability and RCA</strong> | <span
+                            class="italic">LangGraph, FastAPI, pgvector, Next.js</span></span>
+                    <span class="right-text"><a href="https://agentlens.dpdns.org">agentlens.dpdns.org</a> | 2026</span>
+                </div>
+                <div class="italic" style="font-size: 8.8pt;">VinAI Practical Talent Program (Team 083) &ndash;
+                    Full-stack / Agent Engineer</div>
+                <ul>
+                    <li>Shipped a live RCA platform for multi-agent systems with <strong>7 O(1) detectors</strong>
+                        (loops, bottlenecks, tool thrashing, token spikes) and a <strong>3-node LangGraph</strong>
+                        (Triage &rarr; Analyst &rarr; Verifier) with span-level quotes.</li>
+                    <li>Prevented hallucinated config diffs via <strong>HITL approval</strong> and Layer-1 PII
+                        redaction; built on FastAPI, Next.js, PostgreSQL 16 + pgvector, Docker.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="row-between">
+                    <span><strong class="bold">VietIDP &ndash; On-premise Vietnamese Document AI</strong> | <span
+                            class="italic">YOLOv8, VietOCR, Qwen2.5, Chroma</span></span>
+                    <span class="right-text"><a
+                            href="https://github.com/Tienes2810/OCR-LLM-RESEARCH">github.com/.../OCR-LLM-RESEARCH</a> |
+                        2025 &ndash; 2026</span>
+                </div>
+                <div class="italic" style="font-size: 8.8pt;">DUT Faculty of IT Scientific Research Initiative &ndash;
+                    Project Team Lead &amp; Lead AI Developer</div>
+                <ul>
+                    <li>Awarded <strong>Honorable Mention (Top 7 Outstanding Projects)</strong> at DUT Faculty
+                        Scientific Research Day 2026.</li>
+                    <li>Engineered a 100% on-premise pipeline (zero cloud data egress): <strong>YOLOv8x</strong> stamp
+                        removal &rarr; <strong>EasyOCR + VietOCR</strong> &rarr; <strong>Qwen2.5-7B</strong> (4-bit)
+                        structured JSON &rarr; <strong>Chroma</strong> RAG via FastAPI + React + CUDA.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="row-between">
+                    <span><strong class="bold">Japanese Learning Platform (PBL3) &ndash; Grade A</strong> | <span
+                            class="italic">React 19, Supabase, Gemini AI</span></span>
+                    <span class="right-text"><a href="https://kanjilearning.vercel.app">kanjilearning.vercel.app</a> |
+                        2026</span>
+                </div>
+                <div class="italic" style="font-size: 8.8pt;">Project Lead &amp; Full-stack Developer &ndash; Repo: <a
+                        href="https://github.com/Thainguyen2103/PBL3">github.com/Thainguyen2103/PBL3</a></div>
+                <ul>
+                    <li>Shipped a full-stack Japanese learning app (PvP Arena realtime, Gemini AI coaching, Kanji
+                        graphs) with matchmaking that eliminates lobby race conditions via PostgreSQL <code
+                            style="font-size: 8.5pt;">FOR UPDATE SKIP LOCKED</code>.</li>
+                    <li>Also earned <strong>Grade A</strong> on <strong>PBL2</strong> (C/SDL2 Game Store) and
+                        <strong>PBL1</strong> (TSP Visualizer with Branch &amp; Bound + DP Bitmask).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Experience & Leadership -->
+        <section class="section">
+            <h2 class="section-title">Experience &amp; Leadership</h2>
+
+            <div class="entry">
+                <div class="row-between">
+                    <span class="bold">Google Student Ambassador (GSA Vietnam)</span>
+                    <span class="right-text">National / Danang | 2025 &ndash; Present</span>
+                </div>
+                <div class="italic" style="font-size: 8.8pt;">Official Ambassador &ndash; Central Vietnam Representative
+                </div>
+                <ul>
+                    <li>Selected in the <strong>Top 600</strong> nationwide out of 7,000+ applicants; awarded
+                        <strong>Top 200 "Gemini Rising Star"</strong> for AI advocacy.</li>
+                    <li>Organized and hosted hands-on AI workshops on Google Gemini at Swinburne University and Danang
+                        University of Technology.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="row-between">
+                    <span class="bold">Technical Communities &amp; Informatics Mentoring</span>
+                    <span class="right-text">Remote / Hue | 2020 &ndash; Present</span>
+                </div>
+                <div class="italic" style="font-size: 8.8pt;">Creator, Administrator &amp; Competitive Programming Coach
+                </div>
+                <ul>
+                    <li><strong>Kham Pha Khoa Hoc (2020&ndash;2021):</strong> Co-founded and grew a STEM science
+                        community from 60,000 to <strong>400,000+ members</strong>.</li>
+                    <li><strong>Mini World VN (2020&ndash;2022):</strong> Developed Lua gameplay systems with
+                        <strong>324,000+ downloads</strong>; served as Official Critic.</li>
+                    <li><strong>Olympiad Coach (2022&ndash;Present):</strong> Mentored Hue high school students in
+                        advanced C++ algorithms and data structures.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Awards, Honors & Scholarships -->
+        <section class="section">
+            <h2 class="section-title">Awards, Honors &amp; Scholarships</h2>
+            <ul style="margin-top: 2px;">
+                <li><strong>Competitive Programming:</strong> <strong>Codeforces Expert</strong> (Peak: 1731);
+                    <strong>ICPC Honorable Mention</strong> (National 2025, Southern 2025, Central 2024); <strong>Silver
+                        Medal</strong> at DUT Code League 2025; <strong>Central AI Olympiad Regional</strong> (Top 5
+                    DUT); <strong>VNOI Cup 2023 National Finalist</strong>.</li>
+                <li><strong>High School Contests:</strong> Honorable Mention at Central &amp; Highlands Olympiad (2023)
+                    and National Youth Informatics (2023); Provincial Informatics Contest 3rd Prize (2022) and
+                    Consolation Prize (2023).</li>
+                <li><strong>Honors &amp; Scholarships:</strong> <strong>"Thanh niên tiên tiến làm theo lời Bác" cấp Trường năm 2026</strong> (DUT); <strong>Google Career Certificates Scholarship</strong> (2026);
+                    <strong>Stanford Machine Learning Specialization</strong> (Coursera); <strong>Acecook Happy
+                        Scholarship</strong> (2024); <strong>"Tiep Suc Den Truong"</strong> (Tuoi Tre Newspaper, 2024);
+                    <strong>Hue Study Encouragement Scholarship</strong> (2025).</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+
+</html>
