@@ -1,0 +1,139 @@
+% !TEX program = xelatex
+% AI Engineer CV --- VinSpace intern
+% Linked live file: ../CV_NguyenTien.pdf  (GitHub Pages)
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=0.46in, top=0.38in, bottom=0.36in]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\defaultfontfeatures{Ligatures=NoCommon}
+\setmainfont{Calibri}
+\setsansfont{Calibri}
+
+\definecolor{navy}{HTML}{1B4F9C}
+\definecolor{ink}{HTML}{1F2937}
+\definecolor{muted}{HTML}{4B5563}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=navy,
+  linkcolor=navy,
+  pdfborder={0 0 0},
+  pdfauthor={Nguyen Tien},
+  pdftitle={CV_NguyenTien},
+  pdfsubject={AI Engineer Intern, VinSpace}
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.1em, itemsep=0.55pt, topsep=0.7pt, parsep=0pt, partopsep=0pt}
+\urlstyle{same}
+\hyphenpenalty=8000
+\exhyphenpenalty=8000
+
+% Rule sits below the heading. Negative vspace pulls it through glyphs --- do not use.
+\titleformat{\section}[block]
+  {\normalsize\bfseries\color{navy}}
+  {}{0em}{}
+  [{\vspace{4pt}{\color{navy}\titlerule[0.8pt]}}]
+\titlespacing*{\section}{0pt}{5.6pt}{4.2pt}
+
+\newcommand{\role}[4]{%
+  {\bfseries\color{ink}#1}\hfill{\itshape\color{muted}\small #2}\\[-0.6pt]
+  {\itshape\small\color{ink}#3}\hfill{\small\color{muted}#4}\par\vspace{0.4pt}%
+}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries\color{navy}NGUYEN TIEN}\\[3pt]
+  {\scriptsize
+    \href{mailto:nguyentien281006@gmail.com}{nguyentien281006@gmail.com}
+    $\cdot$ (+84)~857~674~338
+    $\cdot$ Danang, Vietnam
+    $\cdot$ \href{https://tienes2810.github.io}{tienes2810.github.io}\\[0.5pt]
+    GitHub: \href{https://github.com/Tienes2810}{github.com/Tienes2810}
+    $\cdot$ LinkedIn: \href{https://linkedin.com/in/tienes2810}{linkedin.com/in/tienes2810}
+    $\cdot$ Codeforces: \href{https://codeforces.com/profile/bkdn25.Tienes}{bkdn25.Tienes}
+  }
+\end{center}
+
+\section{PROFESSIONAL SUMMARY}
+\small
+Third-year student pursuing an \textbf{Engineer's Degree (Master's level equivalent) in Information Technology (Japanese)} at \textbf{Danang University of Science and Technology (DUT)}. \textbf{AI Engineer Intern at VinSpace}. Trainee in the \textbf{20{,}000 Practical AI Talents Training Program (VinUniversity $\times$ Vingroup)} (Cohort 3). \textbf{Codeforces Expert (1731)}. Builds satellite star-tracker perception and ships guarded LLM systems and on-premise document AI. Japanese JLPT N4 (pursuing N3).
+
+\section{TECHNICAL SKILLS}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{3.05cm} X@{}}
+Programming \& DSA & C/C++ (competitive, advanced), Python, Java, C\#, JavaScript/TypeScript, SQL, Lua, algorithms / optimization. \\[0.4pt]
+AI / ML / CV & Computer vision (OpenCV, sub-pixel centroiding, geometric matching), LLMs, Agentic AI (LangGraph, tool calling, multi-agent), RAG, OCR/Document AI, PyTorch, QLoRA, Ollama, Gemini. \\[0.4pt]
+MLOps \& Infra & Docker, Terraform, AWS/GCP, FastAPI, MLflow, DVC, GitHub Actions, llama.cpp (TTFT/P99), Lakehouse, Qdrant/pgvector/Chroma/FAISS, Feast, HA/DR. \\[0.4pt]
+Safety \& Observability & Langfuse, LangSmith, RAGAS, PII redaction, prompt-injection guardrails, HITL, data governance, JSON logs, SLO/runbooks. \\[0.4pt]
+Full-stack \& Data & React, Next.js, Node.js/Express, PostgreSQL, Supabase (Auth, Realtime, RLS), Tailwind, SQLAlchemy, Alembic. \\[0.4pt]
+Languages & English (Professional), Japanese (JLPT N4, pursuing N3).
+\end{tabularx}
+
+\section{EDUCATION}
+\role{Danang University of Science and Technology (DUT)}{Danang, Vietnam}
+{Engineer's Degree (Master's level equivalent), Information Technology (Japanese) $\cdot$ GPA 3.33/4.0}{Aug 2024 -- Sep 2029}
+\begin{itemize}
+  \item \small Earned \textbf{honors admission} to 3 top-tier tech universities (DUT, VNU-UET, VKU) and a seat on DUT's official Informatics Olympiad / ICPC team.
+  \item \small Completing the \textbf{20{,}000 Practical AI Talents Training Program (VinUniversity $\times$ Vingroup)} (Cohort 3, ID 2A202601655, Jul 2026 -- Present), \textbf{Track 2: AI Infrastructure}: data pipelines, lakehouse, vector/feature store, model serving (llama.cpp, TTFT/P99), MLOps (MLflow, DVC), Terraform/AWS/GCP, Docker, CI/CD, monitoring, HA/DR, data governance.
+\end{itemize}
+
+\section{EXPERIENCE}
+\role{VinSpace (Vingroup)}{Vietnam}
+{AI Engineer Intern}{2026 -- Present}
+\begin{itemize}
+  \item \small Built a lost-in-space star-tracker pipeline for satellite attitude determination: OpenCV sub-pixel centroiding, geometric star identification (K-vector, Pyramid), and Wahba attitude estimation (SVD/QUEST).
+  \item \small Shipped a synthetic-sky simulator, Monte Carlo benchmarks, and a browser demo that scores the estimated quaternion against ground truth.
+\end{itemize}
+
+\role{Google Student Ambassador}{National / Danang}
+{Official Ambassador --- Central Vietnam representative}{2025 -- Present}
+\begin{itemize}
+  \item \small Selected as 1 of the \textbf{Top 600 of 7{,}000+} nationwide applicants and named \textbf{Top 200 Gemini Rising Star} by publishing 10+ Gemini explainers and running AI workshops at Swinburne and DUT.
+\end{itemize}
+
+\role{Technical Communities and Mentoring}{Remote / Hue}
+{Creator, Administrator, and Olympiad Coach}{2020 -- Present}
+\begin{itemize}
+  \item \small Grew a science forum from 60K to \textbf{400{,}000+} members (2020--2021) by running content ops and 5+ online contests; reached \textbf{324{,}000+} Mini World map downloads (2020--2022) by shipping Lua gameplay systems as official platform critic; coach Hue olympiad teams in advanced C++ (2022--Present).
+\end{itemize}
+
+\section{SELECTED PROJECTS}
+\role{AgentLens --- Multi-Agent Observability and RCA}{Live: agentlens.dpdns.org}
+{VinAI Practical Talent Program $\cdot$ Team 083 $\cdot$ Full-stack / Agent Engineer}{2026}
+\begin{itemize}
+  \item \small Shipped a live RCA platform for multi-agent systems, measured by \textbf{7 O(1) detectors} (loops, bottlenecks, tool thrashing, token spikes) plus a 3-node LangGraph graph (Triage $\rightarrow$ Analyst $\rightarrow$ Verifier) with span-level evidence quotes.
+  \item \small Blocked hallucinated config diffs by requiring HITL approval and Layer-1 PII redaction on every proposal, implemented in FastAPI, Next.js, PostgreSQL 16 + pgvector, Docker Compose.
+\end{itemize}
+
+\role{VietIDP --- On-premise Vietnamese Document AI (OCR + LLM)}{github.com/Tienes2810/OCR-LLM-RESEARCH}
+{Project Team Lead and Lead AI Developer $\cdot$ DUT Faculty of IT}{2025 -- 2026}
+\begin{itemize}
+  \item \small Ranked \textbf{Top 7 (Honorable Mention)} at DUT Faculty Scientific Research Day 2026 by leading an on-premise pipeline: YOLOv8x stamp removal $\rightarrow$ EasyOCR + VietOCR $\rightarrow$ Qwen2.5-7B (Ollama 4-bit) structured JSON $\rightarrow$ Chroma RAG.
+  \item \small Kept \textbf{100\% of documents on-machine} (no cloud egress) by deploying FastAPI + React + Docker + CUDA with a local quantized LLM and a QLoRA extraction path.
+\end{itemize}
+
+\role{Japanese Learning Platform (PBL3) --- Grade A}{kanjilearning.vercel.app}
+{Project Lead and Full-stack Developer $\cdot$ github.com/Thainguyen2103/PBL3}{2026}
+\begin{itemize}
+  \item \small Earned \textbf{Grade A} by shipping a production Japanese-learning web app (React 19, Supabase Realtime, Gemini coaching, Kanji graphs) with PvP matchmaking that eliminates lobby race conditions via PostgreSQL FOR UPDATE SKIP LOCKED.
+  \item \small Also earned \textbf{Grade A} on PBL2 and PBL1 by delivering a C/C++/SDL2 game-store desktop app and a TSP visualizer using Branch \& Bound + DP-with-bitmask.
+\end{itemize}
+
+\section{COMPETITIVE PROGRAMMING, HONORS, AND SCHOLARSHIPS}
+\begin{itemize}
+  \item \small Reached \textbf{Codeforces Expert}, peak \textbf{1731}. ICPC Honorable Mention --- National 2025, Southern 2025, Central 2024. Central AI Olympiad regional (Top 5 DUT). \textbf{Silver Medal}, DUT Code League 2025. VNOI Cup 2023 national finalist.
+  \item \small High school: Honorable Mention, Central \& Highlands Olympiad and National Youth Informatics (2023); Provincial Third Prize and Consolation (2022--2023).
+  \item \small \textbf{``Thanh niên tiên tiến làm theo lời Bác''} cấp Trường năm 2026 (DUT). Stanford Machine Learning Specialization (Coursera). Google Career Certificates Scholarship (2026). Acecook Happy Scholarship (2024); Tuoi Tre ``Tiep suc den truong'' (2024); Hue Study Encouragement (2025).
+\end{itemize}
+
+\end{document}
