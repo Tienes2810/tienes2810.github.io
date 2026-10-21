@@ -73,8 +73,8 @@ Third-year student pursuing an \textbf{Engineer's Degree (Master's level equival
 \begin{tabularx}{\textwidth}{@{}>{\bfseries}p{3.05cm} X@{}}
 Programming \& DSA & C/C++ (competitive, advanced), Python, Java, C\#, JavaScript/TypeScript, SQL, Lua, algorithms / optimization. \\[0.4pt]
 AI, CV \& Agents & OpenCV, YOLOv8, ONNX Runtime, sub-pixel centroiding, star identification, PyTorch, QLoRA, LangGraph, multi-agent (MCP, A2A), RAG, tool calling, Document AI / OCR (EasyOCR, VietOCR), Ollama, Gemini. \\[0.4pt]
-AI Infra \& MLOps & NVIDIA Jetson, Docker, Terraform, AWS/GCP, FastAPI, vLLM, llama.cpp (TTFT/P99), MLflow, DVC, GitHub Actions, Airflow, dbt, Kafka, Spark, Delta Lake, DuckDB, Great Expectations, Feast, Qdrant, pgvector, Chroma, FAISS, Redis, MinIO, HA/DR, GPU FinOps. \\[0.4pt]
-LLMOps \& Safety & Langfuse, LangSmith, RAGAS, OpenTelemetry, Prometheus/Grafana, Presidio PII redaction, prompt-injection guardrails, HITL, data governance. \\[0.4pt]
+AI Infra \& MLOps & NVIDIA Jetson, Docker, Terraform, AWS, FastAPI, llama.cpp (TTFT/P99), MLflow, DVC, GitHub Actions, Airflow, dbt, Kafka, Delta Lake, DuckDB, Great Expectations, Feast, Qdrant, pgvector, Chroma, FAISS, Redis, HA/DR, Prometheus/Grafana, GPU FinOps. \\[0.4pt]
+LLMOps \& Safety & Langfuse, LangSmith, RAGAS, OpenTelemetry, Vietnamese PII redaction (regex), prompt-injection guardrails, HITL, data governance. \\[0.4pt]
 Full-stack \& Data & React, Next.js, Node.js/Express, PostgreSQL, Supabase (Auth, Realtime, RLS), Tailwind, SQLAlchemy, Alembic. \\[0.4pt]
 Languages & English (Professional), Japanese (JLPT N4, pursuing N3).
 \end{tabularx}
@@ -87,8 +87,8 @@ Languages & English (Professional), Japanese (JLPT N4, pursuing N3).
 \end{itemize}
 
 \section{EXPERIENCE}
-\role{Vingroup (VinUniversity $\times$ VinSpace) --- AI Engineer Intern, 1 of 3 selected from 1{,}000}{Jul 2026 -- Oct 2026}
-{VinSpace (Sep--Oct 2026): onboard vision software for a CubeSat 8U targeting NVIDIA Jetson Orin Nano}{}
+\role{Vingroup (VinUniversity $\times$ VinSpace) --- AI Engineer Intern}{Jul 2026 -- Oct 2026}
+{VinSpace (Sep--Oct 2026, selected as 1 of 3 from 1{,}000 Cohort 3 trainees): onboard vision software for a CubeSat 8U targeting NVIDIA Jetson Orin Nano}{}
 \begin{itemize}
   \item \small Solved \textbf{96.7\% of 2{,}304 simulated flight-camera frames within 10$''$} with \textbf{zero mis-points $\geq$1$^\circ$} (ESA tetra3: 86.0\%; LOST: 76 mis-points) by building a no-ML lost-in-space star tracker with K-vector Pyramid star ID, SVD Wahba, and a validation gate.
   \item \small Sustained \textbf{1 Hz attitude solutions on a CPU-only Jetson Orin Nano} (\textbf{3{,}656/3{,}656} full-res 24.6 MP frames at $\sim$0.74 s, 1.9 GiB, 6.1 W) by porting the solver to a flight package with ground-built catalogs and a CRC-checked 42-byte packet.
@@ -98,7 +98,7 @@ Languages & English (Professional), Japanese (JLPT N4, pursuing N3).
 \end{itemize}
 {\itshape\small\color{ink}VinUniversity (Jul--Sep 2026): AI in Action training --- 15 theory days and 13 Track 2 (AI Infrastructure) labs}\par\vspace{0.4pt}
 \begin{itemize}
-  \item \small Flagged \textbf{7 multi-agent failure modes in constant time} (loops, bottlenecks, tool thrashing, token spikes) by shipping \href{https://agentlens.dpdns.org}{AgentLens}, a live RCA platform with a 3-node LangGraph (Triage $\rightarrow$ Analyst $\rightarrow$ Verifier), PII redaction, and human-approved config diffs.
+  \item \small Flagged \textbf{7 multi-agent failure modes} (loops, bottlenecks, redundant calls, prompt injection) by shipping \href{https://agentlens.dpdns.org}{AgentLens}, a live RCA platform with a 5-node LangGraph (Triage $\rightarrow$ Evidence $\rightarrow$ Analyst $\rightarrow$ Verifier $\rightarrow$ Alerter), PII redaction, and human-approved config diffs.
   \item \small Helped win \textbf{2nd Prize (1st Runner-up)} at the room Mini Hackathon by mining \textbf{2{,}522 chatlog lines from 369 learners} to prove a 53.6\% same-concept follow-up rate, the evidence behind the team's grounded AI-tutor feature.
 \end{itemize}
 
@@ -120,7 +120,7 @@ Languages & English (Professional), Japanese (JLPT N4, pursuing N3).
 {Project Team Lead and Lead AI Developer $\cdot$ DUT Faculty of IT}{2025 -- 2026}
 \begin{itemize}
   \item \small Earned \textbf{Top 7 Honorable Mention} at DUT Faculty Scientific Research Day 2026 and cut OCR character error on administrative documents from \textbf{35.2\%} (raw EasyOCR) \textbf{to 23.5\%} by building a zero-cloud-egress parser: YOLOv8 stamp removal, VietOCR, 4-bit Qwen2.5-7B, and local RAG.
-  \item \small Kept \textbf{100\% of documents on-machine} (no cloud egress) by deploying FastAPI + React + Docker + CUDA with a local quantized LLM and a QLoRA extraction path.
+  \item \small Kept \textbf{100\% of documents on-machine} (no cloud egress) by deploying FastAPI + React + Docker + CUDA with a local 4-bit quantized LLM.
 \end{itemize}
 
 \role{Japanese Learning Platform (PBL3) --- Grade A}{kanjilearning.vercel.app}

@@ -164,7 +164,7 @@
                     </div>
                     <div>
                         <div class="text-xs font-bold text-slate-400 uppercase mb-1">AI Infra &amp; MLOps</div>
-                        <div class="text-sm font-semibold text-slate-800">Docker, Terraform, Airflow, vLLM, Jetson</div>
+                        <div class="text-sm font-semibold text-slate-800">Docker, Terraform, Airflow, MLflow, Jetson</div>
                     </div>
                     <div>
                         <div class="text-xs font-bold text-slate-400 uppercase mb-1">Full-stack &amp; Lang</div>
@@ -246,8 +246,8 @@
                             class="mono text-sm text-indigo-700 font-semibold bg-indigo-50 px-3 py-1 rounded-full w-max mt-2 md:mt-0">07/2026
                             – 10/2026</span>
                     </div>
-                    <p class="font-medium text-slate-800 mb-1">Thực tập sinh AI Engineer · 1 of 3 selected từ 1.000 học viên Khoá 3 · chương trình full-time AI in Action (Chương trình Đào tạo 20.000 Nhân tài AI thực chiến)</p>
-                    <p class="text-sm font-semibold text-indigo-700 mt-3 mb-1">VinSpace (09/2026 – 10/2026) · phần mềm thị giác on-board cho vệ tinh CubeSat 8U, nền tảng đích NVIDIA Jetson Orin Nano</p>
+                    <p class="font-medium text-slate-800 mb-1">Thực tập sinh AI Engineer · chương trình full-time AI in Action (Chương trình Đào tạo 20.000 Nhân tài AI thực chiến)</p>
+                    <p class="text-sm font-semibold text-indigo-700 mt-3 mb-1">VinSpace (09/2026 – 10/2026) · 1 of 3 selected từ 1.000 học viên Khoá 3 · phần mềm thị giác on-board cho vệ tinh CubeSat 8U, nền tảng đích NVIDIA Jetson Orin Nano</p>
                     <ul class="list-disc ml-5 text-sm text-slate-600 space-y-1">
                         <li>Giải đúng <strong>96,7% trong 2.304 khung mô phỏng</strong> với sai số dưới 10″ và <strong>không khung nào trỏ nhầm từ 1°</strong> (tetra3 của ESA: 86,0%; LOST trỏ nhầm 76 khung), bằng cách tự xây star tracker lost-in-space không dùng học máy: K-vector, Pyramid, Wahba (SVD) và cổng xác nhận.</li>
                         <li>Đạt <strong>nhịp 1 Hz trên Jetson Orin Nano chỉ dùng CPU</strong> (3.656/3.656 khung 24,6 MP, khoảng 0,74 giây mỗi khung, 1,9 GiB, 6,1 W), bằng cách đóng gói bộ giải thành chương trình bay với bảng sao dựng sẵn và gói kết quả 42 byte có CRC.</li>
@@ -257,7 +257,7 @@
                     </ul>
                     <p class="text-sm font-semibold text-indigo-700 mt-3 mb-1">VinUniversity (07/2026 – 09/2026) · đào tạo AI in Action: 15 ngày lý thuyết và 13 lab Track 2 (AI Infrastructure)</p>
                     <ul class="list-disc ml-5 text-sm text-slate-600 space-y-1">
-                        <li>Phát hiện <strong>7 kiểu lỗi multi-agent trong thời gian O(1)</strong> (vòng lặp, nghẽn, tool thrashing, token tăng đột biến), bằng cách xây <a href="https://agentlens.dpdns.org" target="_blank" class="text-blue-600 hover:underline">AgentLens</a>: nền tảng RCA chạy thật với LangGraph 3 node (Triage → Analyst → Verifier), lọc PII và để người duyệt mọi thay đổi cấu hình.</li>
+                        <li>Phát hiện <strong>7 kiểu lỗi multi-agent</strong> (vòng lặp, nghẽn cổ chai, gọi lặp dư thừa, prompt injection), bằng cách xây <a href="https://agentlens.dpdns.org" target="_blank" class="text-blue-600 hover:underline">AgentLens</a>: nền tảng RCA chạy thật với LangGraph 5 node (Triage → Evidence → Analyst → Verifier → Alerter), lọc PII và để người duyệt mọi thay đổi cấu hình.</li>
                         <li>Góp phần giúp nhóm đạt <strong>Giải Nhì (1st Runner-up)</strong> Mini Hackathon cấp phòng, bằng cách phân tích <strong>2.522 dòng chatlog của 369 học viên</strong> và chứng minh 53,6% câu hỏi nối tiếp cùng chủ đề, làm bằng chứng cho tính năng gia sư AI của nhóm.</li>
                     </ul>
                     <div class="flex flex-wrap gap-1.5 mt-3">
@@ -265,18 +265,15 @@
                         <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">Airflow</span>
                         <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">dbt</span>
                         <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">Kafka</span>
-                        <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">Spark</span>
                         <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">Delta Lake</span>
                         <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">Feast</span>
                         <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">Qdrant</span>
-                        <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">vLLM</span>
                         <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">llama.cpp</span>
                         <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">MLflow</span>
                         <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">DVC</span>
                         <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">LangSmith</span>
                         <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">OpenTelemetry</span>
                         <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">Prometheus/Grafana</span>
-                        <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">Presidio</span>
                         <span class="text-xs font-semibold px-2 py-0.5 bg-slate-50 rounded border border-slate-200">GPU FinOps</span>
                     </div>
                 </div>
@@ -445,8 +442,8 @@
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 mb-2">AgentLens</h3>
                         <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                            Nền tảng Observability &amp; RCA cho multi-agent: 7 detector O(1) (loop, bottleneck, token
-                            spikes), LangGraph 3-node với span quotes, cơ chế HITL và lọc PII Layer-1.
+                            Nền tảng Observability &amp; RCA cho multi-agent: 7 detector rule-based (loop, bottleneck, gọi
+                            lặp, prompt injection…), LangGraph 5 node với span quotes, cơ chế HITL và lọc PII Layer-1.
                         </p>
                     </div>
                     <div>
