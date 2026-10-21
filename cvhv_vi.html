@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV_NguyenTien_VI</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+            font-size: 9.15pt;
+            line-height: 1.2;
+            color: #1F2937;
+            background: #f1f5f9;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 15px auto;
+            padding: 8.5mm 12mm 7mm;
+            background: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        @media print {
+            body {
+                background: #ffffff;
+            }
+
+            .page {
+                width: auto;
+                min-height: auto;
+                margin: 0;
+                padding: 8.5mm 12mm 7mm;
+                box-shadow: none;
+            }
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .name {
+            font-size: 16pt;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+            color: #1B4F9C;
+        }
+
+        .contacts {
+            font-size: 8.6pt;
+            color: #334155;
+            line-height: 1.35;
+        }
+
+        a {
+            color: #1B4F9C;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section */
+        .section {
+            margin-top: 3px;
+            margin-bottom: 2px;
+        }
+
+        .section-title {
+            font-size: 10pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #1B4F9C;
+            border-bottom: 1.15pt solid #1B4F9C;
+            padding-bottom: 1.5px;
+            margin-bottom: 3px;
+        }
+
+        /* Entry */
+        .entry {
+            margin-bottom: 3.5px;
+        }
+
+        .row-between {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 10px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .right-text {
+            text-align: right;
+            font-size: 8.6pt;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .right-text a {
+            color: #1B4F9C;
+            text-decoration: none;
+        }
+
+        /* Bullets */
+        ul {
+            list-style-type: disc;
+            margin-left: 15px;
+            margin-top: 1px;
+        }
+
+        li {
+            margin-bottom: 1px;
+            font-size: 9.1pt;
+            text-align: justify;
+        }
+
+        .skills-list li {
+            text-align: left;
+            margin-bottom: 1.5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="name">Nguyễn Tiến</h1>
+            <div class="contacts">
+                <a href="mailto:nguyentien281006@gmail.com">nguyentien281006@gmail.com</a>
+                &bull; (+84) 857 674 338
+                &bull; Đà Nẵng, Việt Nam
+                &bull; <a href="https://tienes2810.github.io">tienes2810.github.io</a><br>
+                <a href="https://github.com/Tienes2810">github.com/Tienes2810</a>
+                &bull; <a href="https://linkedin.com/in/tienes2810">linkedin.com/in/tienes2810</a>
+                &bull; <a href="https://codeforces.com/profile/bkdn25.Tienes">bkdn25.Tienes (Expert, 1731)</a>
+            </div>
+        </header>
+
+        <!-- Tóm tắt -->
+        <section class="section">
+            <h2 class="section-title">Tóm tắt</h2>
+            <p style="font-size: 9.2pt; text-align: justify;">
+                Sinh viên năm 3 hệ <strong>Kỹ sư (tương đương Thạc sĩ) ngành Công nghệ thông tin (tiếng Nhật)</strong> tại <strong>Đại học Bách khoa &ndash; Đại học Đà Nẵng (DUT)</strong>. Hoàn thành kỳ thực tập <strong>AI Engineer tại Vingroup (VinUniversity &times; VinSpace), 1 trong 3 người được chọn từ 1.000 học viên Khóa 3 chương trình AI&nbsp;in&nbsp;Action</strong> vào VinSpace, làm phần mềm star tracker và phát hiện Mặt Trăng cho vệ tinh CubeSat 8U. <strong>Codeforces Expert (1731)</strong>. Thị giác vệ tinh, hạ tầng AI, AI xử lý văn bản on-premise và hệ thống LLM có guardrail. Tiếng Nhật JLPT N4 (đang ôn N3).
+            </p>
+        </section>
+
+        <!-- Học vấn -->
+        <section class="section">
+            <h2 class="section-title">Học vấn</h2>
+            <div class="entry">
+                <div class="row-between">
+                    <span class="bold">Trường Đại học Bách khoa &ndash; Đại học Đà Nẵng (DUT)</span>
+                    <span class="right-text">Đà Nẵng, Việt Nam</span>
+                </div>
+                <div class="row-between">
+                    <span class="italic">Kỹ sư (tương đương Thạc sĩ), Công nghệ thông tin (tiếng Nhật) &ndash;
+                        <strong style="font-style: normal;">GPA: 3,33 / 4,0</strong></span>
+                    <span class="right-text italic">08/2024 &ndash; 09/2029</span>
+                </div>
+                <ul>
+                    <li><strong>Tuyển thẳng</strong> vào 3 trường đại học công nghệ hàng đầu (DUT, VNU-UET, VKU); thành viên đội tuyển Olympic Tin học và ICPC của DUT.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Kỹ năng -->
+        <section class="section">
+            <h2 class="section-title">Kỹ năng</h2>
+            <ul class="skills-list" style="margin-top: 2px;">
+                <li><strong>Lập trình &amp; Giải thuật:</strong> C/C++ (thi đấu, nâng cao), Python, Java, C#,
+                    JavaScript/TypeScript, SQL, Lua, giải thuật &amp; tối ưu.</li>
+                <li><strong>AI, thị giác &amp; agent:</strong> OpenCV, YOLOv8, ONNX Runtime, tính tâm sao dưới pixel,
+                    nhận dạng sao, PyTorch, QLoRA, LangGraph, multi-agent (MCP, A2A), RAG, tool calling, Document AI /
+                    OCR (EasyOCR, VietOCR), Ollama, Gemini.</li>
+                <li><strong>Hạ tầng AI &amp; MLOps:</strong> Jetson, Docker, Terraform, AWS/GCP, FastAPI, vLLM,
+                    llama.cpp (TTFT/P99), MLflow, DVC, GitHub Actions, Airflow, dbt, Kafka, Spark, Delta Lake, DuckDB,
+                    Great Expectations, Feast, Qdrant, pgvector, Chroma, FAISS, Redis, MinIO, HA/DR, GPU FinOps.</li>
+                <li><strong>LLMOps &amp; An toàn:</strong> Langfuse, LangSmith, RAGAS, OpenTelemetry, Prometheus/Grafana,
+                    Presidio (che PII), prompt-injection guardrails.</li>
+                <li><strong>Full-stack &amp; CSDL:</strong> React, Next.js, Node.js/Express, PostgreSQL, Supabase (Auth,
+                    Realtime, RLS), Tailwind CSS, SQLAlchemy.</li>
+                <li><strong>Ngoại ngữ:</strong> Tiếng Anh (làm việc chuyên nghiệp), tiếng Nhật (JLPT N4, đang ôn N3).</li>
+            </ul>
+        </section>
+
+        <!-- Kinh nghiệm & Hoạt động -->
+        <section class="section">
+            <h2 class="section-title">Kinh nghiệm &amp; Hoạt động</h2>
+
+            <div class="entry">
+                <div class="row-between">
+                    <span class="bold">Vingroup (VinUniversity &times; VinSpace) &ndash; Thực tập sinh AI Engineer, 1 trong 3 người được chọn từ 1.000</span>
+                    <span class="right-text">07/2026 &ndash; 10/2026</span>
+                </div>
+                <div class="italic" style="font-size: 8.8pt;">VinSpace (09&ndash;10/2026): phần mềm thị giác on-board cho vệ tinh CubeSat 8U, hướng tới NVIDIA Jetson Orin Nano</div>
+                <ul>
+                    <li>Giải đúng <strong>96,7% trong 2.304 khung mô phỏng camera bay với sai số dưới 10&Prime;</strong>, <strong>không khung
+                        nào trỏ nhầm &ge;1&deg;</strong> (ESA tetra3: 86,0%; LOST trỏ nhầm 76 khung), nhờ tự xây star tracker
+                        lost-in-space không dùng học máy (Pyramid + K-vector, Wahba/SVD, cổng xác nhận).</li>
+                    <li>Duy trì <strong>nhịp 1 Hz trên Jetson Orin Nano chỉ dùng CPU</strong>
+                        (<strong>3.656/3.656</strong> khung 24,6 MP, ~0,74 giây/khung, 1,9 GiB, 6,1 W), bằng cách đóng gói
+                        bộ giải thành chương trình bay với bảng sao dựng sẵn và gói kết quả 42 byte có CRC.</li>
+                    <li>Giải được <strong>6/6 ảnh trời đêm thật và 8/8 ảnh FLIR ở lab</strong> (LOST gọi sai tên sao
+                        ở 7/8 ảnh), nhờ tự tìm tiêu cự chỉ từ hình học các sao.</li>
+                    <li>Phát hiện Mặt Trăng đúng <strong>91,4% trên 220 ảnh test thật, báo nhầm 0,9%</strong>
+                        (mô hình cũ dùng ảnh mô phỏng: 83,0% / 4,7%), nhờ tuyển 437 ảnh có trăng và 1.162 ảnh khó không trăng
+                        của NASA, chia tập theo phiên chụp và huấn luyện lại YOLOv8n trên ảnh thật + ảnh thu nhỏ.</li>
+                    <li>Chọn dữ liệu huấn luyện phù hợp với tàu, <strong>loại 8/12 (67%) bộ ảnh Trái Đất</strong> sai quỹ đạo,
+                        cảm biến hoặc GSD và chọn telemetry BUPT-1 khớp <strong>65% biến đầu vào</strong>, bằng cách chấm
+                        từng nguồn công khai theo camera và danh sách kênh của tàu.</li>
+                </ul>
+                <div class="italic" style="font-size: 8.8pt; margin-top: 1px;">VinUniversity (07&ndash;09/2026): đào tạo AI in Action &ndash; 15 ngày lý thuyết và 13 lab Track 2 (Hạ tầng AI)</div>
+                <ul>
+                    <li>Phát hiện <strong>7 kiểu lỗi multi-agent trong thời gian hằng số</strong> (vòng lặp, nghẽn cổ chai, gọi
+                        tool lặp, token tăng đột biến), bằng cách xây <a href="https://agentlens.dpdns.org">AgentLens</a>, nền tảng
+                        RCA chạy thật với LangGraph 3 node (Triage &rarr; Analyst &rarr; Verifier), che PII và để người duyệt
+                        mọi thay đổi cấu hình.</li>
+                    <li>Góp phần giúp nhóm đạt <strong>Giải Nhì (1st Runner-up)</strong> Mini Hackathon cấp phòng, bằng cách
+                        phân tích <strong>2.522 dòng chatlog của 369 học viên</strong> để chứng minh 53,6% câu hỏi nối tiếp cùng
+                        chủ đề, làm bằng chứng cho tính năng gia sư AI bám sát transcript bài giảng của nhóm.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="row-between">
+                    <span class="bold">Google Student Ambassador (GSA Việt Nam)</span>
+                    <span class="right-text">Toàn quốc / Đà Nẵng | 2025 &ndash; 07/2026</span>
+                </div>
+                <div class="italic" style="font-size: 8.8pt;">Đại sứ chính thức &ndash; Đại diện khu vực miền Trung
+                </div>
+                <ul>
+                    <li>Đạt danh hiệu <strong>Top 200 "Gemini Rising Star"</strong> sau khi lọt <strong>Top 600 trong hơn
+                        7.000</strong> ứng viên toàn quốc, bằng cách viết hơn 10 bài giới thiệu Gemini và tổ chức workshop
+                        Gemini thực hành tại Swinburne và DUT.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="row-between">
+                    <span class="bold">Cộng đồng công nghệ &amp; Bồi dưỡng Tin học</span>
+                    <span class="right-text">Từ xa / Huế | 2020 &ndash; nay</span>
+                </div>
+                <div class="italic" style="font-size: 8.8pt;">Người sáng lập, Quản trị viên &amp; Huấn luyện viên lập trình thi đấu
+                </div>
+                <ul>
+                    <li><strong>Khám Phá Khoa Học (2020&ndash;2021):</strong> Đưa diễn đàn STEM từ 60.000 lên
+                        <strong>400.000+ thành viên</strong>, nhờ đồng sáng lập và tổ chức 5+ cuộc thi online.</li>
+                    <li><strong>Mini World VN (2020&ndash;2022):</strong> Đạt hơn <strong>324.000 lượt tải</strong> bằng cách
+                        lập trình map bằng Lua; đồng thời là Official Platform Critic.</li>
+                    <li><strong>Bồi dưỡng HSG Tin học (2022&ndash;nay):</strong> Có <strong>2 học trò: 1 giải Nhất, 1 giải
+                        Nhì</strong> HSG Tin học cấp tỉnh (THPT), nhờ dạy C++/DSA cho học sinh Huế.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Dự án nổi bật -->
+        <section class="section">
+            <h2 class="section-title">Dự án nổi bật</h2>
+
+            <div class="entry">
+                <div class="row-between">
+                    <span class="bold">VietIDP &ndash; Trích xuất tài liệu tiếng Việt on-premise (Document AI)</span>
+                    <span class="right-text"><a href="https://github.com/Tienes2810/OCR-LLM-RESEARCH">github.com/Tienes2810/OCR-LLM-RESEARCH</a></span>
+                </div>
+                <div class="row-between">
+                    <span class="italic" style="font-size: 8.6pt;">Sáng kiến NCKH Khoa CNTT, DUT &ndash; Trưởng nhóm dự án &amp; Lead AI Developer</span>
+                    <span class="right-text italic">2025 &ndash; 2026</span>
+                </div>
+                <ul>
+                    <li>Đạt <strong>Giải Khuyến khích (Top 7)</strong> ngày hội NCKH cấp Khoa và giảm lỗi ký tự OCR trên văn bản
+                        hành chính từ <strong>35,2%</strong> (EasyOCR gốc) <strong>xuống 23,5%</strong>, bằng cách xây bộ trích xuất
+                        không gửi dữ liệu lên cloud: xoá con dấu bằng YOLOv8, VietOCR, Qwen2.5-7B 4-bit và RAG cục bộ.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="row-between">
+                    <span class="bold">Nền tảng học tiếng Nhật (PBL3) &ndash; Điểm A</span>
+                    <span class="right-text"><a href="https://kanjilearning.vercel.app">kanjilearning.vercel.app</a></span>
+                </div>
+                <div class="row-between">
+                    <span class="italic" style="font-size: 8.6pt;">Trưởng nhóm &amp; Lập trình full-stack &ndash; <a href="https://github.com/Thainguyen2103/PBL3">github.com/Thainguyen2103/PBL3</a></span>
+                    <span class="right-text italic">2026</span>
+                </div>
+                <ul>
+                    <li>Đạt <strong>điểm A</strong> (PBL1 và PBL2 cũng điểm A), nhờ dẫn dắt làm web học tiếng Nhật full-stack, trong đó
+                        ghép trận PvP thời gian thực khoá từng phòng chờ bằng PostgreSQL
+                        <code style="font-size: 8.5pt;">FOR UPDATE SKIP LOCKED</code>, nên nhiều người vào cùng lúc không làm tràn phòng.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Giải thưởng, Danh hiệu & Học bổng -->
+        <section class="section">
+            <h2 class="section-title">Giải thưởng, Danh hiệu &amp; Học bổng</h2>
+            <ul style="margin-top: 2px;">
+                <li><strong>Lập trình thi đấu:</strong> <strong>Codeforces Expert</strong> (đỉnh: 1731);
+                    <strong>ICPC Giải Khuyến khích</strong> (Quốc gia 2025, Miền Nam 2025, Miền Trung 2024);
+                    <strong>Huy chương Bạc</strong> DUT Code League 2025; <strong>Olympic AI Miền Trung</strong> vòng khu vực
+                    (Top 5 DUT); <strong>Chung kết toàn quốc VNOI Cup 2023</strong>.</li>
+                <li><strong>Thi học sinh giỏi (THPT):</strong> Giải Khuyến khích Olympic Tin học Miền Trung &ndash; Tây Nguyên (2023)
+                    và Tin học trẻ Toàn quốc (2023); HSG Tin học cấp Tỉnh: Giải Ba (2022) và Giải Khuyến khích (2023).</li>
+                <li><strong>Danh hiệu &amp; Học bổng:</strong> <strong>"Thanh niên tiên tiến làm theo lời Bác" cấp Trường năm 2026</strong> (DUT);
+                    <strong>Học bổng Google Career Certificates</strong> (2026); <strong>Chứng chỉ Stanford Machine Learning
+                    Specialization</strong> (Coursera); <strong>Học bổng Acecook Happy</strong> (2024); <strong>Học bổng "Tiếp sức đến
+                    trường"</strong> (Báo Tuổi Trẻ, 2024); <strong>Học bổng Khuyến học Huế</strong> (2025).</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+
+</html>

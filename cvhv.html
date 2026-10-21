@@ -168,7 +168,7 @@
         <section class="section">
             <h2 class="section-title">Professional Summary</h2>
             <p style="font-size: 9.2pt; text-align: justify;">
-                Third-year student pursuing an <strong>Engineer's Degree (Master's level equivalent) in Information Technology (Japanese)</strong> at <strong>Danang University of Science and Technology (DUT)</strong>. <strong>AI Engineer Intern at VinSpace, 1 of 3 selected from 1,000 Cohort 3 trainees</strong> in the Vingroup &times; VinUniversity &times; VinSpace program. <strong>Codeforces Expert (1731)</strong>. Star-tracker perception, on-premise document AI, and guarded LLM systems. Japanese JLPT N4 (pursuing N3).
+                Third-year student pursuing an <strong>Engineer's Degree (Master's level equivalent) in Information Technology (Japanese)</strong> at <strong>Danang University of Science and Technology (DUT)</strong>. Completed an <strong>AI Engineer internship at Vingroup (VinUniversity &times; VinSpace), 1 of 3 selected from 1,000 AI&nbsp;in&nbsp;Action Cohort 3 trainees</strong> for VinSpace, delivering a star tracker and Moon detection software for a CubeSat 8U. <strong>Codeforces Expert (1731)</strong>. Satellite vision, AI infrastructure, on-premise document AI, and guarded LLM systems. Japanese JLPT N4 (pursuing N3).
             </p>
         </section>
 
@@ -186,8 +186,7 @@
                     <span class="right-text italic">Aug 2024 &ndash; Sep 2029</span>
                 </div>
                 <ul>
-                    <li><strong>Honors Admission:</strong> Admitted to 3 top-tier tech universities (DUT, VNU-UET, VKU); member of DUT's official Informatics Olympiad &amp; ICPC teams.</li>
-                    <li><strong>AI in Action</strong> (Vingroup &times; VinUniversity &times; VinSpace), Jul 2026&ndash;Oct 2026 (expected). <strong>2nd Prize (1st Runner-up)</strong>, room Mini Hackathon. Deep learning, LLMs, computer vision, and document AI, then full-time engineering at VinSpace.</li>
+                    <li><strong>Honors Admission:</strong> Admitted to 3 top-tier tech universities (DUT, VNU-UET, VKU); member of DUT's Informatics Olympiad &amp; ICPC teams.</li>
                 </ul>
             </div>
         </section>
@@ -198,12 +197,14 @@
             <ul class="skills-list" style="margin-top: 2px;">
                 <li><strong>Programming &amp; DSA:</strong> C/C++ (competitive, advanced), Python, Java, C#,
                     JavaScript/TypeScript, SQL, Lua, algorithms &amp; optimization.</li>
-                <li><strong>AI, CV &amp; Agents:</strong> Computer vision (OpenCV, sub-pixel centroiding, geometric
-                    matching), LangGraph, multi-agent systems, RAG, tool calling, Document AI / OCR (EasyOCR, VietOCR,
-                    YOLOv8), PyTorch, QLoRA, Ollama, Gemini.</li>
-                <li><strong>MLOps &amp; Infra:</strong> Docker, Terraform, AWS/GCP, FastAPI, MLflow, DVC, GitHub
-                    Actions, llama.cpp (TTFT/P99), Lakehouse, Vector Stores (Qdrant, pgvector, Chroma, FAISS), Feast,
-                    HA/DR, PII Guardrails, Langfuse.</li>
+                <li><strong>AI, CV &amp; Agents:</strong> OpenCV, YOLOv8, ONNX Runtime, sub-pixel centroiding, star
+                    identification, PyTorch, QLoRA, LangGraph, multi-agent (MCP, A2A), RAG, tool calling, Document AI /
+                    OCR (EasyOCR, VietOCR), Ollama, Gemini.</li>
+                <li><strong>AI Infra &amp; MLOps:</strong> NVIDIA Jetson, Docker, Terraform, AWS/GCP, FastAPI, vLLM,
+                    llama.cpp (TTFT/P99), MLflow, DVC, GitHub Actions, Airflow, dbt, Kafka, Spark, Delta Lake, DuckDB,
+                    Great Expectations, Feast, Qdrant, pgvector, Chroma, FAISS, Redis, MinIO, HA/DR, GPU FinOps.</li>
+                <li><strong>LLMOps &amp; Safety:</strong> Langfuse, LangSmith, RAGAS, OpenTelemetry, Prometheus/Grafana,
+                    Presidio PII redaction, prompt-injection guardrails.</li>
                 <li><strong>Full-stack &amp; DB:</strong> React, Next.js, Node.js/Express, PostgreSQL, Supabase (Auth,
                     Realtime, RLS), Tailwind CSS, SQLAlchemy.</li>
                 <li><strong>Languages:</strong> English (Professional Working), Japanese (JLPT N4, actively pursuing
@@ -217,13 +218,36 @@
 
             <div class="entry">
                 <div class="row-between">
-                    <span class="bold">VinSpace (Vingroup) &ndash; AI Engineer Intern, 1 of 3 selected from 1,000</span>
-                    <span class="right-text">Jul 2026 &ndash; Present</span>
+                    <span class="bold">Vingroup (VinUniversity &times; VinSpace) &ndash; AI Engineer Intern, 1 of 3 selected from 1,000</span>
+                    <span class="right-text">Jul 2026 &ndash; Oct 2026</span>
                 </div>
+                <div class="italic" style="font-size: 8.8pt;">VinSpace (Sep&ndash;Oct 2026): onboard vision software for a CubeSat 8U targeting NVIDIA Jetson Orin Nano</div>
                 <ul>
-                    <li>Cut median satellite pointing error by <strong>81% versus ESA tetra3</strong> by solely building an end-to-end lost-in-space attitude pipeline using sub-pixel centroiding, K-vector, Pyramid, and Wahba/QUEST.</li>
-                    <li>Prevented training on invalid optical imagery by <strong>filtering out 67% of incompatible collections</strong> through pre-training checks of orbit and sensor.</li>
-                    <li>Enabled pre-flight housekeeping forecasting without on-orbit data, <strong>achieving 65% signal coverage</strong> by keeping only public records that share power and thermal channels.</li>
+                    <li>Solved <strong>96.7% of 2,304 simulated flight-camera frames within 10&Prime;</strong> with <strong>zero
+                        mis-points &ge;1&deg;</strong> (ESA tetra3: 86.0%; LOST: 76 mis-points) by building a no-ML
+                        lost-in-space star tracker with K-vector Pyramid star ID, SVD Wahba, and a validation gate.</li>
+                    <li>Sustained <strong>1 Hz attitude solutions on a CPU-only Jetson Orin Nano</strong>
+                        (<strong>3,656/3,656</strong> full-res 24.6 MP frames at ~0.74 s, 1.9 GiB, 6.1 W) by porting
+                        the solver to a flight package with ground-built catalogs and a CRC-checked 42-byte packet.</li>
+                    <li>Solved <strong>6/6 real night-sky photos and 8/8 FLIR lab frames</strong> (LOST misidentified
+                        7/8) by recovering focal scale from star geometry alone.</li>
+                    <li>Detected the Moon in <strong>91.4% of 220 held-out real images at 0.9% false alarms</strong>
+                        (sim-augmented baseline: 83.0% / 4.7%) by curating 437 Moon and 1,162 hard-negative NASA images,
+                        splitting by capture session, and retraining YOLOv8n on real plus downscaled-real data.</li>
+                    <li>Scoped flight-compatible training data, <strong>rejecting 8 of 12 (67%) Earth-image
+                        datasets</strong> for wrong orbit, sensor, or GSD and selecting BUPT-1 telemetry at <strong>65%
+                        input coverage</strong>, by scoring every public source against the CubeSat camera and channel
+                        list.</li>
+                </ul>
+                <div class="italic" style="font-size: 8.8pt; margin-top: 1px;">VinUniversity (Jul&ndash;Sep 2026): AI in Action training &ndash; 15 theory days and 13 Track 2 (AI Infrastructure) labs</div>
+                <ul>
+                    <li>Flagged <strong>7 multi-agent failure modes in constant time</strong> (loops, bottlenecks, tool
+                        thrashing, token spikes) by shipping <a href="https://agentlens.dpdns.org">AgentLens</a>, a live RCA
+                        platform with a 3-node LangGraph (Triage &rarr; Analyst &rarr; Verifier), PII redaction, and
+                        human-approved config diffs.</li>
+                    <li>Helped win <strong>2nd Prize (1st Runner-up)</strong> at the room Mini Hackathon by mining <strong>2,522
+                        chatlog lines from 369 learners</strong> to prove a 53.6% same-concept follow-up rate, the evidence
+                        behind the team's grounded AI-tutor feature.</li>
                 </ul>
             </div>
 
@@ -235,9 +259,9 @@
                 <div class="italic" style="font-size: 8.8pt;">Official Ambassador &ndash; Central Vietnam Representative
                 </div>
                 <ul>
-                    <li>Selected in the <strong>Top 600</strong> nationwide out of 7,000+ applicants; awarded
-                        <strong>Top 200 "Gemini Rising Star"</strong> for AI advocacy.</li>
-                    <li>Organized and hosted hands-on AI workshops on Google Gemini at Swinburne University and DUT.</li>
+                    <li>Earned <strong>Top 200 "Gemini Rising Star"</strong> after selection into the <strong>Top 600
+                        of 7,000+</strong> applicants nationwide by publishing 10+ Gemini explainers and running hands-on
+                        Gemini workshops at Swinburne University and DUT.</li>
                 </ul>
             </div>
 
@@ -249,12 +273,12 @@
                 <div class="italic" style="font-size: 8.8pt;">Creator, Administrator &amp; Competitive Programming Coach
                 </div>
                 <ul>
-                    <li><strong>Kham Pha Khoa Hoc (2020&ndash;2021):</strong> Co-founded and grew a STEM science
-                        community from 60,000 to <strong>400,000+ members</strong>.</li>
-                    <li><strong>Mini World VN (2020&ndash;2022):</strong> Developed Lua gameplay systems with
-                        <strong>324,000+ downloads</strong>; served as Official Critic.</li>
-                    <li><strong>Olympiad Coach (2022&ndash;Present):</strong> Mentored Hue high school students in
-                        advanced C++ algorithms and data structures.</li>
+                    <li><strong>Kham Pha Khoa Hoc (2020&ndash;2021):</strong> Grew a STEM forum from 60,000 to
+                        <strong>400,000+ members</strong> by co-founding it and running 5+ online contests.</li>
+                    <li><strong>Mini World VN (2020&ndash;2022):</strong> Reached <strong>324,000+ downloads</strong> by
+                        programming Lua gameplay maps; also served as Official Platform Critic.</li>
+                    <li><strong>Olympiad Coach (2022&ndash;Present):</strong> Coached Hue students to <strong>a provincial 1st
+                        Prize and a 2nd Prize</strong> in Informatics by teaching C++/DSA.</li>
                 </ul>
             </div>
         </section>
@@ -262,24 +286,6 @@
         <!-- Selected Projects -->
         <section class="section">
             <h2 class="section-title">Selected Projects</h2>
-
-            <div class="entry">
-                <div class="row-between">
-                    <span class="bold">AgentLens &ndash; Multi-Agent Observability and RCA</span>
-                    <span class="right-text"><a href="https://agentlens.dpdns.org">agentlens.dpdns.org</a></span>
-                </div>
-                <div class="row-between">
-                    <span class="italic" style="font-size: 8.6pt;">VinAI Practical Talent Program (Team 083) &ndash; Full-stack / Agent Engineer</span>
-                    <span class="right-text italic">2026</span>
-                </div>
-                <ul>
-                    <li>Flagged <strong>7 multi-agent failure modes in constant time</strong> (loops, bottlenecks, tool
-                        thrashing, token spikes) by shipping a live RCA platform with a 3-node LangGraph
-                        (Triage &rarr; Analyst &rarr; Verifier).</li>
-                    <li>Blocked unapproved config diffs and kept PII off the model by enforcing Layer-1 redaction and
-                        human approval on FastAPI and pgvector.</li>
-                </ul>
-            </div>
 
             <div class="entry">
                 <div class="row-between">
@@ -291,8 +297,9 @@
                     <span class="right-text italic">2025 &ndash; 2026</span>
                 </div>
                 <ul>
-                    <li>Earned <strong>Top 7 Honorable Mention</strong> at the faculty research day by building a
-                        zero-cloud-egress parser (YOLOv8x stamp removal, VietOCR, 4-bit Qwen2.5-7B, local RAG).</li>
+                    <li>Earned <strong>Top 7 Honorable Mention</strong> at the faculty research day and cut OCR character
+                        error on administrative documents from <strong>35.2%</strong> (raw EasyOCR) <strong>to 23.5%</strong>
+                        by building a zero-cloud-egress parser: YOLOv8 stamp removal, VietOCR, 4-bit Qwen2.5-7B, and local RAG.</li>
                 </ul>
             </div>
 
@@ -306,9 +313,9 @@
                     <span class="right-text italic">2026</span>
                 </div>
                 <ul>
-                    <li>Removed concurrent lobby races in real-time PvP matchmaking by serializing seat claims with
-                        PostgreSQL <code style="font-size: 8.5pt;">FOR UPDATE SKIP LOCKED</code>. Grade A; also Grade A
-                        on PBL2 and PBL1.</li>
+                    <li>Earned <strong>Grade A</strong> (also on PBL1 and PBL2) by leading a full-stack Japanese-learning app
+                        whose real-time PvP matchmaking locks each waiting room with PostgreSQL
+                        <code style="font-size: 8.5pt;">FOR UPDATE SKIP LOCKED</code>, so concurrent joins never overfill a match.</li>
                 </ul>
             </div>
         </section>
@@ -324,9 +331,9 @@
                 <li><strong>High School Contests:</strong> Honorable Mention at Central &amp; Highlands Olympiad (2023)
                     and National Youth Informatics (2023); Provincial Informatics Contest 3rd Prize (2022) and
                     Consolation Prize (2023).</li>
-                <li><strong>Honors &amp; Scholarships:</strong> <strong>"Thanh niên tiên tiến làm theo lời Bác" cấp Trường năm 2026</strong> (DUT); <strong>Google Career Certificates Scholarship</strong> (2026);
+                <li><strong>Honors &amp; Scholarships:</strong> <strong>Exemplary Youth Following Uncle Ho's Teachings</strong> (university level, DUT, 2026); <strong>Google Career Certificates Scholarship</strong> (2026);
                     <strong>Stanford Machine Learning Specialization</strong> (Coursera); <strong>Acecook Happy
-                        Scholarship</strong> (2024); <strong>"Tiep Suc Den Truong"</strong> (Tuoi Tre Newspaper, 2024);
+                        Scholarship</strong> (2024); <strong>Tiep Suc Den Truong Scholarship</strong> (Tuoi Tre Newspaper, 2024);
                     <strong>Hue Study Encouragement Scholarship</strong> (2025).</li>
             </ul>
         </section>

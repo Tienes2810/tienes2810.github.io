@@ -1,5 +1,5 @@
 % !TEX program = xelatex
-% AI Engineer CV --- VinSpace intern
+% AI Engineer CV --- Vingroup (VinUniversity x VinSpace) intern
 % Linked live file: ../CV_NguyenTien.pdf  (GitHub Pages)
 \documentclass[10pt,a4paper]{article}
 
@@ -26,7 +26,7 @@
   pdfborder={0 0 0},
   pdfauthor={Nguyen Tien},
   pdftitle={CV_NguyenTien},
-  pdfsubject={AI Engineer Intern, VinSpace}
+  pdfsubject={AI Engineer Intern, Vingroup (VinUniversity x VinSpace)}
 }
 
 \pagestyle{empty}
@@ -66,15 +66,15 @@
 
 \section{PROFESSIONAL SUMMARY}
 \small
-Third-year student pursuing an \textbf{Engineer's Degree (Master's level equivalent) in Information Technology (Japanese)} at \textbf{Danang University of Science and Technology (DUT)}. \textbf{AI Engineer Intern at VinSpace, 1 of 3 selected from 1{,}000 Cohort 3 trainees} in the Vingroup $\times$ VinUniversity $\times$ VinSpace program. \textbf{Codeforces Expert (1731)}. Star-tracker perception, on-premise document AI, and guarded LLM systems. Japanese JLPT N4 (pursuing N3).
+Third-year student pursuing an \textbf{Engineer's Degree (Master's level equivalent) in Information Technology (Japanese)} at \textbf{Danang University of Science and Technology (DUT)}. Completed an \textbf{AI Engineer internship at Vingroup (VinUniversity $\times$ VinSpace), 1 of 3 selected from 1{,}000 AI in Action Cohort 3 trainees} for VinSpace, delivering a star tracker and Moon detection software for a CubeSat 8U. \textbf{Codeforces Expert (1731)}. Satellite vision, AI infrastructure, on-premise document AI, and guarded LLM systems. Japanese JLPT N4 (pursuing N3).
 
 \section{TECHNICAL SKILLS}
 \small
 \begin{tabularx}{\textwidth}{@{}>{\bfseries}p{3.05cm} X@{}}
 Programming \& DSA & C/C++ (competitive, advanced), Python, Java, C\#, JavaScript/TypeScript, SQL, Lua, algorithms / optimization. \\[0.4pt]
-AI / ML / CV & Computer vision (OpenCV, sub-pixel centroiding, geometric matching), LLMs, Agentic AI (LangGraph, tool calling, multi-agent), RAG, OCR/Document AI, PyTorch, QLoRA, Ollama, Gemini. \\[0.4pt]
-MLOps \& Infra & Docker, Terraform, AWS/GCP, FastAPI, MLflow, DVC, GitHub Actions, llama.cpp (TTFT/P99), Lakehouse, Qdrant/pgvector/Chroma/FAISS, Feast, HA/DR. \\[0.4pt]
-Safety \& Observability & Langfuse, LangSmith, RAGAS, PII redaction, prompt-injection guardrails, HITL, data governance, JSON logs, SLO/runbooks. \\[0.4pt]
+AI, CV \& Agents & OpenCV, YOLOv8, ONNX Runtime, sub-pixel centroiding, star identification, PyTorch, QLoRA, LangGraph, multi-agent (MCP, A2A), RAG, tool calling, Document AI / OCR (EasyOCR, VietOCR), Ollama, Gemini. \\[0.4pt]
+AI Infra \& MLOps & NVIDIA Jetson, Docker, Terraform, AWS/GCP, FastAPI, vLLM, llama.cpp (TTFT/P99), MLflow, DVC, GitHub Actions, Airflow, dbt, Kafka, Spark, Delta Lake, DuckDB, Great Expectations, Feast, Qdrant, pgvector, Chroma, FAISS, Redis, MinIO, HA/DR, GPU FinOps. \\[0.4pt]
+LLMOps \& Safety & Langfuse, LangSmith, RAGAS, OpenTelemetry, Prometheus/Grafana, Presidio PII redaction, prompt-injection guardrails, HITL, data governance. \\[0.4pt]
 Full-stack \& Data & React, Next.js, Node.js/Express, PostgreSQL, Supabase (Auth, Realtime, RLS), Tailwind, SQLAlchemy, Alembic. \\[0.4pt]
 Languages & English (Professional), Japanese (JLPT N4, pursuing N3).
 \end{tabularx}
@@ -84,56 +84,56 @@ Languages & English (Professional), Japanese (JLPT N4, pursuing N3).
 {Engineer's Degree (Master's level equivalent), Information Technology (Japanese) $\cdot$ GPA 3.33/4.0}{Aug 2024 -- Sep 2029}
 \begin{itemize}
   \item \small Earned \textbf{honors admission} to 3 top-tier tech universities (DUT, VNU-UET, VKU) and a seat on DUT's official Informatics Olympiad / ICPC team.
-  \item \small \textbf{AI in Action} (Vingroup $\times$ VinUniversity $\times$ VinSpace), Jul 2026--Oct 2026 (expected). \textbf{2nd Prize (1st Runner-up)}, room Mini Hackathon. Deep learning, LLMs, computer vision, and document AI, then full-time engineering at VinSpace.
 \end{itemize}
 
 \section{EXPERIENCE}
-\role{VinSpace (Vingroup) --- AI Engineer Intern, 1 of 3 selected from 1{,}000}{Jul 2026 -- Present}
-{Full-time on-the-job engineering, Vingroup $\times$ VinUniversity $\times$ VinSpace}{}
+\role{Vingroup (VinUniversity $\times$ VinSpace) --- AI Engineer Intern, 1 of 3 selected from 1{,}000}{Jul 2026 -- Oct 2026}
+{VinSpace (Sep--Oct 2026): onboard vision software for a CubeSat 8U targeting NVIDIA Jetson Orin Nano}{}
 \begin{itemize}
-  \item \small Cut median satellite pointing error by \textbf{81\% versus ESA tetra3} by solely building an end-to-end lost-in-space attitude pipeline using sub-pixel centroiding, K-vector, Pyramid, and Wahba/QUEST.
-  \item \small Prevented training on invalid optical imagery by \textbf{filtering out 67\% of incompatible collections} through pre-training checks of orbit and sensor.
-  \item \small Enabled pre-flight housekeeping forecasting without on-orbit data, \textbf{achieving 65\% signal coverage} by keeping only public records that share power and thermal channels.
+  \item \small Solved \textbf{96.7\% of 2{,}304 simulated flight-camera frames within 10$''$} with \textbf{zero mis-points $\geq$1$^\circ$} (ESA tetra3: 86.0\%; LOST: 76 mis-points) by building a no-ML lost-in-space star tracker with K-vector Pyramid star ID, SVD Wahba, and a validation gate.
+  \item \small Sustained \textbf{1 Hz attitude solutions on a CPU-only Jetson Orin Nano} (\textbf{3{,}656/3{,}656} full-res 24.6 MP frames at $\sim$0.74 s, 1.9 GiB, 6.1 W) by porting the solver to a flight package with ground-built catalogs and a CRC-checked 42-byte packet.
+  \item \small Solved \textbf{6/6 real night-sky photos and 8/8 FLIR lab frames} (LOST misidentified 7/8) by recovering focal scale from star geometry alone.
+  \item \small Detected the Moon in \textbf{91.4\% of 220 held-out real images at 0.9\% false alarms} (sim-augmented baseline: 83.0\% / 4.7\%) by curating 437 Moon and 1{,}162 hard-negative NASA images, splitting by capture session, and retraining YOLOv8n on real plus downscaled-real data.
+  \item \small Scoped flight-compatible training data, \textbf{rejecting 8 of 12 (67\%) Earth-image datasets} for wrong orbit, sensor, or GSD and selecting BUPT-1 telemetry at \textbf{65\% input coverage}, by scoring every public source against the CubeSat camera and channel list.
+\end{itemize}
+{\itshape\small\color{ink}VinUniversity (Jul--Sep 2026): AI in Action training --- 15 theory days and 13 Track 2 (AI Infrastructure) labs}\par\vspace{0.4pt}
+\begin{itemize}
+  \item \small Flagged \textbf{7 multi-agent failure modes in constant time} (loops, bottlenecks, tool thrashing, token spikes) by shipping \href{https://agentlens.dpdns.org}{AgentLens}, a live RCA platform with a 3-node LangGraph (Triage $\rightarrow$ Analyst $\rightarrow$ Verifier), PII redaction, and human-approved config diffs.
+  \item \small Helped win \textbf{2nd Prize (1st Runner-up)} at the room Mini Hackathon by mining \textbf{2{,}522 chatlog lines from 369 learners} to prove a 53.6\% same-concept follow-up rate, the evidence behind the team's grounded AI-tutor feature.
 \end{itemize}
 
 \role{Google Student Ambassador}{National / Danang}
 {Official Ambassador --- Central Vietnam representative}{2025 -- Jul 2026}
 \begin{itemize}
-  \item \small Selected as 1 of the \textbf{Top 600 of 7{,}000+} nationwide applicants and named \textbf{Top 200 Gemini Rising Star} by publishing 10+ Gemini explainers and running AI workshops at Swinburne and DUT.
+  \item \small Earned \textbf{Top 200 Gemini Rising Star} after selection into the \textbf{Top 600 of 7{,}000+} applicants nationwide by publishing 10+ Gemini explainers and running hands-on Gemini workshops at Swinburne University and DUT.
 \end{itemize}
 
 \role{Technical Communities and Mentoring}{Remote / Hue}
 {Creator, Administrator, and Olympiad Coach}{2020 -- Present}
 \begin{itemize}
-  \item \small Grew a science forum from 60K to \textbf{400{,}000+} members (2020--2021) by running content ops and 5+ online contests; reached \textbf{324{,}000+} Mini World map downloads (2020--2022) by shipping Lua gameplay systems as official platform critic; coach Hue olympiad teams in advanced C++ (2022--Present).
+  \item \small Grew a science forum from 60K to \textbf{400{,}000+} members (2020--2021) by co-founding it and running content ops and 5+ online contests; reached \textbf{324{,}000+} Mini World map downloads (2020--2022) by programming Lua gameplay maps as official platform critic.
+  \item \small Coached Hue students to \textbf{a provincial 1st Prize and a 2nd Prize} in Informatics (2022--Present) by teaching advanced C++ and DSA.
 \end{itemize}
 
 \section{SELECTED PROJECTS}
-\role{AgentLens --- Multi-Agent Observability and RCA}{Live: agentlens.dpdns.org}
-{VinAI Practical Talent Program $\cdot$ Team 083 $\cdot$ Full-stack / Agent Engineer}{2026}
-\begin{itemize}
-  \item \small Shipped a live RCA platform for multi-agent systems, measured by \textbf{7 O(1) detectors} (loops, bottlenecks, tool thrashing, token spikes) plus a 3-node LangGraph graph (Triage $\rightarrow$ Analyst $\rightarrow$ Verifier) with span-level evidence quotes.
-  \item \small Blocked hallucinated config diffs by requiring HITL approval and Layer-1 PII redaction on every proposal, implemented in FastAPI, Next.js, PostgreSQL 16 + pgvector, Docker Compose.
-\end{itemize}
-
 \role{VietIDP --- On-premise Vietnamese Document AI (OCR + LLM)}{github.com/Tienes2810/OCR-LLM-RESEARCH}
 {Project Team Lead and Lead AI Developer $\cdot$ DUT Faculty of IT}{2025 -- 2026}
 \begin{itemize}
-  \item \small Ranked \textbf{Top 7 (Honorable Mention)} at DUT Faculty Scientific Research Day 2026 by leading an on-premise pipeline: YOLOv8x stamp removal $\rightarrow$ EasyOCR + VietOCR $\rightarrow$ Qwen2.5-7B (Ollama 4-bit) structured JSON $\rightarrow$ Chroma RAG.
+  \item \small Earned \textbf{Top 7 Honorable Mention} at DUT Faculty Scientific Research Day 2026 and cut OCR character error on administrative documents from \textbf{35.2\%} (raw EasyOCR) \textbf{to 23.5\%} by building a zero-cloud-egress parser: YOLOv8 stamp removal, VietOCR, 4-bit Qwen2.5-7B, and local RAG.
   \item \small Kept \textbf{100\% of documents on-machine} (no cloud egress) by deploying FastAPI + React + Docker + CUDA with a local quantized LLM and a QLoRA extraction path.
 \end{itemize}
 
 \role{Japanese Learning Platform (PBL3) --- Grade A}{kanjilearning.vercel.app}
 {Project Lead and Full-stack Developer $\cdot$ github.com/Thainguyen2103/PBL3}{2026}
 \begin{itemize}
-  \item \small Grade A Japanese-learning app (React, Supabase, Gemini). Also Grade A on PBL2 (C/SDL2 game store) and PBL1 (TSP, Branch \& Bound + DP bitmask).
+  \item \small Earned \textbf{Grade A} (also on PBL1 and PBL2) by leading a full-stack Japanese-learning app whose real-time PvP matchmaking locks each waiting room with PostgreSQL \texttt{FOR UPDATE SKIP LOCKED}, so concurrent joins never overfill a match.
 \end{itemize}
 
 \section{COMPETITIVE PROGRAMMING, HONORS, AND SCHOLARSHIPS}
 \begin{itemize}
   \item \small Reached \textbf{Codeforces Expert}, peak \textbf{1731}. ICPC Honorable Mention --- National 2025, Southern 2025, Central 2024. Central AI Olympiad regional (Top 5 DUT). \textbf{Silver Medal}, DUT Code League 2025. VNOI Cup 2023 national finalist.
   \item \small High school: Honorable Mention, Central \& Highlands Olympiad and National Youth Informatics (2023); Provincial Third Prize and Consolation (2022--2023).
-  \item \small \textbf{``Thanh niên tiên tiến làm theo lời Bác''} cấp Trường năm 2026 (DUT). Stanford Machine Learning Specialization (Coursera). Google Career Certificates Scholarship (2026). Acecook Happy Scholarship (2024); Tuoi Tre ``Tiep suc den truong'' (2024); Hue Study Encouragement (2025).
+  \item \small \textbf{Exemplary Youth Following Uncle Ho's Teachings} (university level, DUT, 2026). Stanford Machine Learning Specialization (Coursera). Google Career Certificates Scholarship (2026). Acecook Happy Scholarship (2024); Tiep Suc Den Truong Scholarship (Tuoi Tre Newspaper, 2024); Hue Study Encouragement Scholarship (2025).
 \end{itemize}
 
 \end{document}
